@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Disneyland Park</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link rel="shortcut icon" href="icon.ico">
+     <!--제이쿼리 설치 CDN-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!--스크립트 시작-->
+	   <script>
+	     $(document).ready(function(){
+			// 뒤로가기 바
+			$('#backbar').animate({opacity:1},0,function p1(){
+			$('#backbar').animate({left:0},1000,function(){
+			$('#bcakbar').animate({left:-15},1000,p1)
+			})
+			})
+			// content 슬라이드
+		    $('#center li').click(function(){
+			/* 1번	0 / 2번 -450 / 3번 -900 / 4번 -1350 / 5번 -1800 */	
+			slide_top = $(this).index()*-450;
+			//alert(slide_top)
+			$('#left_slide').animate({top:slide_top},150)
+			})
+			$('#center li').click(function(){
+			/* 1번	0 / 2번 -450 / 3번 -900 / 4번 -1350 / 5번 -1800 */	
+			slide_bottom = $(this).index()*-450;
+			//alert(slide_bottom)
+			$('#right_slide').animate({bottom:slide_bottom},150)
+			})
+
+			$('#center li').click(function(){
+			text_num = $(this).index()
+			$('#text div').eq(text_num).show().siblings().hide();
+			})
+			// center li 클릭하면 이름 나오기
+		 });
+	   </script>
+    <style>
+	  * { margin:0; padding:0; list-style:none; }
+      a { text-decoration:none; color:inherit; }
+	  body,html { height:100%; background-color:#dee0e7; overflow:hidden; }
+	  #wrap {  }
+	  #backbar { width:110px; height:30px; position:absolute; left:-15px; top:60px; z-index:99; cursor:pointer; }
+	  #backbar li:nth-child(1) { width:60px; height:1px; background-color:#FFF; float:left; }
+	  #backbar li:nth-child(2) { width:48px; height:3px; background-color:#FFF; float:left; margin-top:-1px; }
+	  #backbar li:nth-child(3) { color:#FFF; margin:7px 0 0 64px; font-size:14px; letter-spacing:2px; }
+	  #menu { width:100%; position:fixed; top:10px; left:0; right:0; margin:auto; text-align:center; }
+	  #menu #arrow { color:#000043; width:490.8px; position:absolute; top:87px; left:0; right:0; margin:auto; font-family: 'PT Sans', sans-serif; }
+	  #menu #arrow li { float:left; }
+	  #menu #arrow li:nth-child(2) { margin:0 145px; letter-spacing:5px; font-size:21px; font-weight:600; }
+	  #ch_box { width:60%; height:70%; position:absolute; left:0; right:0; top:-30px; bottom:0; margin:auto; }
+	  #ch_box #center { width:5%; height:80%; margin:auto; position: absolute; left:0; right:0; top:0; bottom:0; }
+	  #ch_box #center li { margin-bottom:11px; text-align:center; cursor:pointer; }
+	  #ch_box #center li:nth-child(8) { margin-bottom:0; }
+	 
+	  #left_slidewrap { width:329px; height:450px; position:relative; overflow:hidden; text-align:center; left:100px; top:100px; float:left; }
+	  /* 450 = 1번 이미지 : 0 / 2	번 이미지 : 0-450=-450 / 3번 : 0-450*2=-900 / 4번:0-450*3=-1350 / 5번:0-450*4=-1800 */
+	  #left_slidewrap #left_slide { height:3600px; position:absolute; top:0; }
+	  #left_slidewrap #left_slide img { width:329px; height:450px; vertical-align:middle; }
+
+	  #right_slidewrap { width:329px; height:450px; position:relative; overflow:hidden; text-align:center; right:100px; top:100px; float:right; }
+	  /* 450 = 1번 이미지 : 0 / 2	번 이미지 : 0-450=-450 / 3번 : 0-450*2=-900 / 4번:0-450*3=-1350 / 5번:0-450*4=-1800 */
+	  #right_slidewrap #right_slide { height:3600px; position:absolute; bottom:0; }
+	  #right_slidewrap #right_slide img { width:329px; height:450px; vertical-align:middle; }
+
+	  #text>div { width:40%; height:12%; position:absolute; left:0; right:0; bottom:30px; margin:auto; border:1px solid #676767; padding:1%; font-size:14px; line-height:15px; text-align:center; display:none; }
+	  #text>div h3 img { width:18px; height:18px; vertical-align:top; margin:0 10px; }
+	  #text>div p { margin:20px 0 10px 0; }
+	  #text>div h3 { font-weight:600; margin-bottom:5px; color:rgba(0,0,0,0.7); position:absolute; left:0; right:0; bottom:25px; margin:auto; }
+	  #text>div:nth-child(3) h3:last-child { bottom:10px; }
+	  #text>div:nth-child(4) h3:last-child { bottom:10px; }
+	  #text>div:nth-child(5) h3:last-child { bottom:10px; }
+	  #text>div h3 p:nth-child(1) { margin:0 0 7px 0; }
+	  #text>div h3 p:nth-child(2) { margin:0; }
+	  #text>div:nth-child(1) { display:block; }
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+		<ul id="backbar">
+			<li></li>
+			<li></li>
+			<li><a href="index.html">BACK</a></li>
+		</ul>
+		<div id="menu">
+			<img src="menu3.png" alt="" />
+			<ul id="arrow">
+				<li></li>
+				<li>CHARACTERS</li>
+				<li></li>
+			</ul>
+		</div>
+		<div id="ch_box">
+			<div id="left_slidewrap">
+				<div id="left_slide">
+					<img src="character/ch1_1.png" alt="" /><img src="character/ch2_1.png" alt="" /><img src="character/ch3_1.png" alt="" /><img src="character/ch4_1.png" alt="" /><img src="character/ch5_1.png" alt="" /><img src="character/ch6_1.png" alt="" /><img src="character/ch7_1.png" alt="" /><img src="character/ch8_1.png" alt="" />
+				</div>
+			</div>
+			<ul id="center">
+				<li><img src="character/ch1.png" alt=""></li>
+				<li><img src="character/ch22.png" alt=""></li>
+				<li><img src="character/ch3.png" alt=""></li>
+				<li><img src="character/ch4.png" alt=""></li>
+				<li><img src="character/ch5.png" alt=""></li>
+				<li><img src="character/ch6.png" alt=""></li>
+				<li><img src="character/ch7.png" alt=""></li>
+				<li><img src="character/ch8.png" alt=""></li>
+			</ul>
+			<div id="right_slidewrap">
+				<div id="right_slide">
+					<img src="character/ch8_2.png" alt="" /><img src="character/ch7_2.png" alt="" /><img src="character/ch6_2.png" alt="" /><img src="character/ch5_2.png" alt="" /><img src="character/ch4_2.png" alt="" /><img src="character/ch3_2.png" alt="" /><img src="character/ch2_2.png" alt="" /><img src="character/ch1_2.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<div id="text">
+			<div id="text1">
+				<h2>Fantasmic!</h2>
+				<p>It’s the return of Fantasmic! In Mickey’s dream, witness the forces of good and evil battling bigger<br />and better than ever before—thanks to enhanced special effects and jaw-dropping entertainment during this musical, pyrotechnic spectacular!</p>
+				<h3><img src="popup1_2.png" alt="" />Frontierland<img src="character/hours.png" alt="" />10:30 PM</h3>
+			</div>
+			<div id="text2">
+				<h2>Pixar Fest — Coming in Spring 2018!</h2>
+				<p>Beginning April 13, 2018, come celebrate your favorite Pixar stories at Disneyland Park.<br />A new nighttime spectacular and the return of a high-energy parade await at The Happiest Place on Earth!</p>
+				<h3><img src="popup1_2.png" alt="" />Frontierland<img src="character/hours.png" alt="" />10:30 PM</h3></div>
+			<div id="text3">
+				<h2>Mickey's Soundsational Parade</h2>
+				<p>The beat is rockin’ the street in this giant jam session—led by drummer extraordinaire, Mickey Mouse!<br />Mickey leads this rockin’ parade, followed by many of his friends, including some royal Disney Princesses.</p>
+				<h3><p><img src="popup1_2.png" alt="" />Frontierland</p><p><img src="character/hours.png" alt="" />Schedule Unavailable</p></h3>
+			</div>
+			<div id="text4">
+				<h2>Anna & Elsa's Royal Welcome</h2>
+				<p>Wander into a wondrous wintry moment as you come face-to-face with the magnificent sisters from Frozen… and so much more!</p>
+				<h3><p><img src="popup1_2.png" alt="" />Disney California Adventure Park-Hollywood Land</p><p><img src="character/hours.png" alt="" />9:00 AM to 8:30 PM</p></h3>
+			</div>
+			<div id="text5">
+				<h2>Heroic Encounter: Captain America</h2>
+				<p>For pictures, a chat and a heroic handshake. Share a salute with the man who wields the vibranium shield. The first Avenger can’t wait to meet another red, white and true-blue hero like you.</p>
+				<h3><p><img src="popup1_2.png" alt="" />Disney California Adventure Park-Hollywood Land</p><p><img src="character/hours.png" alt="" />9:00 AM to 2:30 PM / 3:30 PM to 9:00 PM</p></h3>
+			</div>
+			<div id="text6">
+				<h2>Meet Tinker Bell or a Fairy Friend at Pixie Hollow</h2>
+				<p>Discover an enchanted forest hideaway where you’ll encounter one of the resident fairies—maybe even Tinker Bell herself!</p>
+				<h3><img src="popup1_2.png" alt="" />Fantasyland<img src="character/hours.png" alt="" />9:00 AM to 3:30 PM</h3>
+			</div>
+			<div id="text7">
+				<h2>Meet 'n' Greet with Aladdin or friends</h2>
+				<p>Strike a pose next to Aladdin or his friends and create some magic moments. Location: Near Restaurant Agrabah Café - Adventureland. Please see the Programme for exact schedule.</p>
+				<h3><img src="popup1_2.png" alt="" />Adventureland<img src="character/hours.png" alt="" />Schedule Unavailable</h3>
+			</div>
+			<div id="text8">
+				<h2>Meet Disney Princesses at Royal Hall</h2>
+				<p>Step into a storybook world filled with fairytale fantasy, castles and “happily ever afters” that happen every day! </p>
+				<h3><img src="popup1_2.png" alt="" />Adventureland<img src="character/hours.png" alt="" />9:00 AM to 7:00 PM</h3>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>
+<!-- <p>A Magical Experience Awaits!<br />Stop by our private location reserved just for Cardmembers and encounter some favorite Disney Characters.</p><br /><p>Each day, simply make your way near Monsters, Inc. Mike & Sulley to the Rescue! in Hollywood Land.<br />While there, you never know who might drop by for a Character Experience filled with photo opportunities and fun—Minnie, Daisy or Stitch.</p><br /><p>You’ll even receive complimentary downloads of your photos too!</p> -->

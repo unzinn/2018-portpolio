@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+     <!--제이쿼리 설치 CDN-->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <!--스크립트 시작-->
+	   <script>
+	     $(document).ready(function(){
+		    $('#center li').click(function(){
+			/* 1번	0 / 2번 -450 / 3번 -900 / 4번 -1350 / 5번 -1800 */	
+			slide_top = $(this).index()*-450;
+			//alert(slide_top)
+			$('#left_slide').animate({top:slide_top},100)
+			})
+			$('#center li').click(function(){
+			/* 1번	0 / 2번 -450 / 3번 -900 / 4번 -1350 / 5번 -1800 */	
+			slide_bottom = $(this).index()*-450;
+			//alert(slide_bottom)
+			$('#right_slide').animate({bottom:slide_bottom},100)
+			})
+		 });
+	   </script>
+    <style>
+	  * { margin:0; padding:0; list-style:none; }
+      a { text-decoration:none; color:inherit; }
+	  body,html { height:100%; background-color:#dee0e7; overflow:hidden; }
+	  #wrap {  }
+	  #menubar { width:105px; height:30px; position:absolute; left:0; top:70px; }
+	  #menubar li:nth-child(1) { width:55px; height:1px; background-color:#FFF; float:left; }
+	  #menubar li:nth-child(2) { width:48px; height:3px; background-color:#FFF; float:left; margin-top:-1px; }
+	  #menubar li:nth-child(3) { color:#fff; margin:7px 0 0 56.5px; font-size:14px; letter-spacing:2px; }
+	  #nextbar { width:50px; height:110px; position:absolute; right:10px; top:0; }
+	  #nextbar li:nth-child(1) { width:1px; height:65px; background-color:#FFF; }
+	  #nextbar li:nth-child(2) { width:3px; height:45px; background-color:#FFF; margin-left:-1px; float:left; }
+	  #nextbar li:nth-child(3) { color:#fff; float:left; width:100px; height:20px; letter-spacing:2px; transform:rotate(270deg); margin:-18px -32px; font-family: 'PT Sans', sans-serif; font-size:14px; }
+	  #nextbar p { margin:-4px 0 -4px 5px; font-size:14px; }
+	  #menu { width:100%; position:absolute; top:10px; left:0; right:0; margin:auto; text-align:center; }
+	  #menu #arrow { color:#000043; width:500px; height:25px; line-height:25px; position:absolute; top:87px; left:0; right:0; margin:auto; text-align:center; }
+	  #menu #arrow li { float:left; }
+	  #menu #arrow li:nth-child(2) { letter-spacing:3px; font-size:21px; font-weight:600; position:absolute; left:0; right:0; margin:auto; }
+	  #menu #arrow li:nth-child(3) { float: right; }
+	  #ch_box { width:60%; height:70%; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }
+	  #ch_box #center { width:5%; height:86%; margin:auto; position: absolute; left:0; right:0; top:0; bottom:0; }
+	  #ch_box #center li { margin-bottom:15.5px; text-align:center; cursor:pointer; }
+	  #ch_box #center li:nth-child(8) { margin-bottom:0; }
+	  #left_slidewrap { width:329px; height:450px; position:relative; overflow:hidden; text-align:center; left:100px; top:100px; float:left; }
+	  /* 450 = 1번 이미지 : 0 / 2	번 이미지 : 0-450=-450 / 3번 : 0-450*2=-900 / 4번:0-450*3=-1350 / 5번:0-450*4=-1800 */
+	  #left_slidewrap #left_slide { height:3600px; position:absolute; top:0; }
+	  #left_slidewrap #left_slide img { width:329px; height:450px; vertical-align:middle; }
+
+	  #right_slidewrap { width:329px; height:450px; position:relative; overflow:hidden; text-align:center; right:100px; top:100px; float:right; }
+	  /* 450 = 1번 이미지 : 0 / 2	번 이미지 : 0-450=-450 / 3번 : 0-450*2=-900 / 4번:0-450*3=-1350 / 5번:0-450*4=-1800 */
+	  #right_slidewrap #right_slide { height:3600px; position:absolute; bottom:0; }
+	  #right_slidewrap #right_slide img { width:329px; height:450px; vertical-align:middle; }
+
+/*	  #right { width:45%; height:100%; background-color:#ffcccc; position:absolute; bottom:0; top:0; right:0; margin:auto; }*/
+/*	  #right li { position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }*/
+/*	  #right li img { position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }*/
+	  #text>div { width:40%; height:12%; position:absolute; left:0; right:0; bottom:30px; margin:auto; border:1px solid #676767; padding:1%; font-size:14px; line-height:15px; text-align:center; display:none; }
+	  #text>div img { width:18px; height:18px; vertical-align:top; margin:0 10px; }
+	  #text>div:nth-child(1) { display:block; }
+	</style>
+ </head>
+ <body>
+	<div id="wrap">
+		<ul id="menubar">
+			<li></li>
+			<li></li>
+			<li>MENU</li>
+		</ul>
+		<ul id="nextbar">
+			<li></li>
+			<li></li>
+			<li>NEXT LAND</li>
+		</ul>
+		<div id="menu">
+			<img src="menu3.png" alt="" />
+			<ul id="arrow">
+				<li>◀</li>
+				<li>CHARACTERS</li>
+				<li>▶</li>
+			</ul>
+		</div>
+		<div id="ch_box">
+			<div id="left_slidewrap">
+				<div id="left_slide">
+					<img src="character/ch1_1.png" alt="" /><img src="character/ch2_1.png" alt="" /><img src="character/ch3_1.png" alt="" /><img src="character/ch4_1.png" alt="" /><img src="character/ch5_1.png" alt="" /><img src="character/ch6_1.png" alt="" /><img src="character/ch7_1.png" alt="" /><img src="character/ch8_1.png" alt="" />
+				</div>
+			</div>
+			<ul id="center">
+				<li><img src="character/ch1.png" alt=""></li>
+				<li><img src="character/ch22.png" alt=""></li>
+				<li><img src="character/ch3.png" alt=""></li>
+				<li><img src="character/ch4.png" alt=""></li>
+				<li><img src="character/ch5.png" alt=""></li>
+				<li><img src="character/ch6.png" alt=""></li>
+				<li><img src="character/ch7.png" alt=""></li>
+				<li><img src="character/ch8.png" alt=""></li>
+			</ul>
+			<div id="right_slidewrap">
+				<div id="right_slide">
+					<img src="character/ch8_1.png" alt="" /><img src="character/ch7_1.png" alt="" /><img src="character/ch6_1.png" alt="" /><img src="character/ch5_1.png" alt="" /><img src="character/ch4_2.png" alt="" /><img src="character/ch3_1.png" alt="" /><img src="character/ch2_2.png" alt="" /><img src="character/ch1_2.png" alt="" />
+				</div>
+			</div>
+		</div>
+		<div id="text">
+			<div id="text1"><h2>Fantasmic!</h2><br /><p>It’s the return of Fantasmic! In Mickey’s dream, witness the forces of good and evil battling bigger<br />and better than ever before—thanks to enhanced special effects and jaw-dropping entertainment during this musical, pyrotechnic spectacular!</p><br /><h3><img src="popup1_2.png" alt="" />Frontierland<img src="character/hours.png" alt="" />10:30 PM</h3></div>
+			<div id="text2"><h2>Fantasmic!</h2><br /><p>It’s the return of Fantasmic! In Mickey’s dream, witness the forces of good and evil battling bigger<br />and better than ever before—thanks to enhanced special effects and jaw-dropping entertainment during this musical, pyrotechnic spectacular!</p><br /><h3><img src="popup1_2.png" alt="" />Frontierland</h3><h3><img src="character/hours.png" alt="" />10:30 PM</h3></div>
+			<div id="text3"></div>
+			<div id="text4"></div>
+			<div id="text5"></div>
+			<div id="text6"></div>
+			<div id="text7"></div>
+			<div id="text8"></div>
+		</div>
+	</div>
+ </body>
+</html>
+<!-- <p>A Magical Experience Awaits!<br />Stop by our private location reserved just for Cardmembers and encounter some favorite Disney Characters.</p><br /><p>Each day, simply make your way near Monsters, Inc. Mike & Sulley to the Rescue! in Hollywood Land.<br />While there, you never know who might drop by for a Character Experience filled with photo opportunities and fun—Minnie, Daisy or Stitch.</p><br /><p>You’ll even receive complimentary downloads of your photos too!</p> -->

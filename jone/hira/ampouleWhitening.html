@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=11,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes"/>
+<meta name="keywords" content="글로벌브랜드 제이원코스메틱">
+<meta name="description" content="글로벌 브랜드 제이원코스메틱. jone, jonecosmetic, 제이원, 하트, 홍샷, 쿠션팩트, 파워래스팅, 파운데이션, 하정우, 홍진영">
+<meta property="og:title" content="제이원코스메틱">
+<meta property="og:url" content="http://www.jonecosmetic.co.kr/">
+<meta property="og:description" content="글로벌브랜드 제이원코스메틱">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="제이원코스메틱">
+<meta name="twitter:url" content="http://www.jonecosmetic.co.kr/">
+<meta name="twitter:description" content="글로벌브랜드 제이원코스메틱">
+<title>제품소개 l 제이원코스메틱</title>
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+<link rel="stylesheet" type="text/css" href="../css/style.css?v=20200717" />
+<link rel="stylesheet" type="text/css" href="../css/common.css?v=20200717">
+<link rel="stylesheet" type="text/css" href="../css/sub.css?v=20200717">
+<link rel="stylesheet" type="text/css" href="../css/slick.css?v=20200717"/>
+<link rel="stylesheet" type="text/css" href="../css/slick-theme.css?v=20200717"/>
+<link rel="stylesheet" type="text/css" href="../css/animate.css?v=20200717">
+<script type="text/javascript" src="../js/jquery-3.4.1.min.js?v=20200717"></script>
+<script type="text/javascript" src="../js/jqueryEasing-1.3.js?v=20200717"> </script>
+<script type="text/javascript" src="../js/slick.js?v=20200717"></script>
+<script type="text/javascript" src="../js/wow.min.js?v=20200717"></script>
+<script type="text/javascript" src="../js/common.js?v=20200717"></script>
+
+ <script>
+ 	var cntSize = function() {
+		nt_Hei = $('.slider').innerHeight(true);
+		$('.prd_info').height(nt_Hei);
+	}
+	$(document).ready(cntSize)
+	$(window).resize(cntSize)
+
+	$(document).ready(function(){
+		$('.slider').slick({
+		  autoplay: true,
+		  autoplaySpeed: 3000,
+		  arrows: false,
+		  dots:true,
+		  customPaging: function(slick,index) {
+				var targetImage = slick.$slides.eq(index).find('img').attr('src');
+				return '<img src=" ' + targetImage + ' "/>';
+		  }
+		});
+
+		$('.slider2').slick({
+		  arrows: true,
+		  dots:true
+		});
+    });
+	var num = 0;
+        var div_num = 0;
+        $(document).ready(function() {
+			setInterval(function(){
+			div_num++;
+			if (div_num == 0) {
+				$('.snsImg').children('img').show();
+			} else {
+				$('.snsImg').children('img').hide()
+			}
+			$('.snsImg').css({ 'background-image': 'url(../images/sub/hira/sns_' + (div_num + 1) + '.jpg)' }).hide().fadeIn(700)
+			num = div_num;
+			if(div_num == 7) div_num = 0;
+
+		},3000);
+	});
+ </script>
+</head>
+
+<body>
+<!--[if lt IE 10]>
+<div class="legacy-browser">
+이 브라우저는 곧 지원 중단됩니다. 최적의 환경을 위해
+<a href="http://windows.microsoft.com/ko-kr/internet-explorer/ie-11-worldwide-languages" target="_blank">브라우저를 업데이트</a>하세요.
+</div>
+<![endif]-->
+	<div id="skip">
+		<a href="#">주메뉴바로가기</a>
+		<a href="#">본문바로가기</a>
+	</div>
+	<!--===== 헤더 영역 시작 ======-->
+	<div class="headerFixed sub_header">
+		<div id="header" class="transition">
+			<div class="header_con pcBlock">
+				<h1 class="transition">
+					<a href="http://jonecosmetic.co.kr/">
+						<img src="../images/logo.png" alt="제이원코스메틱" />
+						<span>제이원코스메틱</span>
+					</a>
+				</h1>
+				<div class="nav transition">
+					<ul>
+						<li class="mm01"><a href="../hira.html">HIRA</a>
+							<div class="sm">
+								<ul>
+									<li><a href="../hira.html">HIRA</a></li>
+									<li><a href="../hira.html#product_hr">제품 소개</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mm02"><a href="../hongshot.html">HONG SHOT</a>
+							<div class="sm">
+								<ul>
+									<li><a href="../hongshot.html">HONG SHOT</a></li>
+									<li><a href="../hongshot.html#product_hs">제품 소개</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mm03"><a href="../haart.html">Haart™</a>
+							<div class="sm">
+								<ul>
+									<li><a href="../haart.html">Haart™</a></li>
+									<li><a href="../haart.html#product_ht">제품 소개</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mm04"><a href="../jone.html">SIGNATURE</a>
+							<div class="sm">
+								<ul>
+									<li><a href="../jone.html">SIGNATURE</a></li>
+									<li><a href="../jone.html#product_jo">제품 소개</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mm05"><a href="../media.html">Media</a>
+ 							<div class="sm">
+ 								<ul>
+ 									<li><a href="../media.html">보도자료</a></li>
+ 								</ul>
+ 							</div>
+ 						</li>
+						<li class="mm06"><a href="../brand.html">About Us</a>
+							<div class="sm">
+								<ul>
+									<li><a href="../brand.html">브랜드 소개</a></li>
+ 									<li><a href="../history.html">연혁</a></li>
+ 									<li><a href="../directions.html">오시는 길</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mm07"><a href="http://www.jonecosmetic.shop/" target="_blank">Shopping Mall</a>
+							<div class="sm">
+								<ul>
+									<li><a href="http://www.jonecosmetic.shop/" target="_blank">쇼핑몰 바로가기</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="smBg"></div>
+			<!-- 모바일 메뉴 -->
+			<div id="mb_menu" class="moBlock">
+				<h1 class="transition">
+					<a href="http://jonecosmetic.co.kr/">
+						<img src="../images/mo_logo.png" alt="제이원코스메틱" />
+					</a>
+				</h1>
+				<div class="btn-all-menu transition">
+					<span class="b1"></span>
+					<span class="b2"></span>
+					<span class="b3"></span>
+				</div>
+				<div class="com_name transition">
+					<a href="http://jonecosmetic.co.kr/">
+						<img src="../images/mo_logo_menu.png" alt="제이원코스메틱" />
+					</a>
+				</div>
+				<ul id="accordeon" class="transition">
+					<li>
+						<a href="#" class="acctitle accbtn en">HIRA</a>
+						<ul class="accbody depth2">
+							<li><a href="../hira.html"><span class="en">HIRA</span> 소개</a></li>
+							<li><a href="../hira_.html#product_hr">제품 소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="acctitle accbtn en">HONG SHOT</a>
+						<ul class="accbody depth2">
+						  <li>
+							<a href="../hongshot.html">
+							  <span class="en">HONG SHOT</span> 소개
+							</a>
+						  </li>
+						  <li><a href="../hongshot_.html#product_hs">제품 소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="acctitle accbtn en">Haart<span>™</span></a>
+						<ul class="accbody depth2">
+						  <li>
+							<a href="../haart.html">
+							  <span class="en">Haart<span>™</span></span> 소개
+							</a>
+						  </li>
+						  <li><a href="../haart_.html#product_ht">제품 소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="acctitle accbtn en">SIGNATURE</a>
+						<ul class="accbody depth2">
+							<li>
+								<a href="../jone.html">
+									<span class="en">SIGNATURE</span> 소개
+								</a>
+							</li>
+							<li><a href="../jone_.html#product_jo">제품 소개</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="acctitle accbtn en">Media</a>
+						<ul class="accbody depth2">
+							<li><a href="../media.html">보도자료</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="acctitle accbtn en">About Us</a>
+						<ul class="accbody depth2">
+							<li><a href="../brand.html">브랜드 소개</a></li>
+							<li><a href="../history.html">연혁</a></li>
+							<li><a href="../directions.html">오시는 길</a></li>
+						</ul>
+					</li>
+					<div class="btn_wrap">
+						<a href="http://www.jonecosmetic.shop/" target="_blank" class="btn">쇼핑몰 바로가기</a>
+					</div>
+				</ul>
+			</div>
+			<!--// 모바일 메뉴 -->
+		</div>
+	</div>
+	<!--===== // 헤더 영역 끝 ======-->
+	<!--===== 콘텐츠 영역 시작 ======-->
+	<section class="sub clear">
+		<!-- 제품소개 -->
+		<article class="productInfo">
+			<div class="slider_wrap">
+				<!-- 이미지 슬라이드 -->
+				<div class="slider sliderA">
+					<div>
+						<img src="../images/sub/hira/ampouleWhitening_01.jpg" alt="히라앰플 화이트닝">
+					</div>
+					<div>
+						<img src="../images/sub/hira/ampouleWhitening_02.jpg" alt="히라앰플 화이트닝">
+					</div>
+					<div>
+						<img src="../images/sub/hira/ampouleWhitening_03.jpg" alt="히라앰플 화이트닝">
+					</div>
+					<div>
+						<img src="../images/sub/hira/ampouleWhitening_04.jpg" alt="히라앰플 화이트닝">
+					</div>
+				</div>
+				<!--//이미지 슬라이드 -->
+			</div>
+			<div class="prd_info">
+				<span>제품소개</span>
+				<h3>하희라 앰플 화이트닝 <span>50ml</span></h3>
+				<p class="en">HIRA AMPOLE WHITENING</p>
+				<p class="txt1">여배우 하희라의 피부고민을 해결한<br>화제의 앰플</p>
+				<p class="txt2">
+					<span style="white-space: nowrap">7가지</span>
+					<span style="white-space: nowrap">사막에너지</span>
+					<span style="white-space: nowrap">성분</span>
+					<span style="white-space: nowrap">83%에</span>
+					<span style="white-space: nowrap">화이트</span>
+					<span style="white-space: nowrap">플라워</span>
+					<span style="white-space: nowrap">11가지가</span>
+					<span style="white-space: nowrap">더해져</span><br class="pcBlock">
+					<span style="white-space: nowrap">화사하고</span>
+					<span style="white-space: nowrap">깨끗한</span>
+					<span style="white-space: nowrap">피부로</span>
+					<span style="white-space: nowrap">가꾸어주는</span>
+					<span style="white-space: nowrap">수분·</span>
+					<span style="white-space: nowrap">탄력·</span>
+					<span style="white-space: nowrap">화이트닝</span>
+					<span style="white-space: nowrap">솔루션</span><br>
+					[주름개선 : 미백 이중기능성 화장품]
+				</p>
+				<div class="btnWrap">
+					<a href="../hira_.html#product_hr" class="btn btn_style3 moBlock">제품목록 보기</a>
+					<a href="http://www.jonecosmetic.shop/shop/product_view.php?pcode=K35E2&ccode=2990000&rURL=http%3A%2F%2Fwww.jonecosmetic.shop%2Finclude%2Fproduct_main_ajax2.php%3Froute_path_type%3Dexe%26cno%3D2990000" class="btn btn_style3" target="_blank" title="쇼핑몰로 이동">구매하기</a>
+				</div>
+			</div>
+		</article>
+		<!-- // 제품소개 -->
+		<!-- 히라 이미지 -->
+		<article class="hiraImage">
+			<div class="imageCnt wow fadeInUp" data-wow-delay="0.2s">
+				<h3>수분 & 탄력 & 화이트닝 솔루션</h3>
+				<img src="../images/sub/hira/hiraWhitening_name.png" alt="">
+			</div>
+		</article>
+		<!-- // 히라 이미지 -->
+		<!-- 히라 앰플 화이트닝 소개 -->
+		<article class="hiraIntro">
+			<div class="explain wow fadeInUp" data-wow-delay="0.1s">
+				<p class="txt1">극한의 환경에서 살아남은</p>
+				<p class="txt2 en">Desert Energy Complex</p>
+				<p class="txt3">극한 사막에서 자생하는 생명력 강한 <br class="moBlock">7가지 사막식물 성분 <span>83%</span> 함유<br>피부에 강력한 보습을 선사합니다.</p>
+				<p class="txt4">보검 선인장 열매 추출물, 보검 선인장 꽃 추출물, <br class="moBlock">트루루즈오브예리코(부활초)추출물<br>플랑크톤 추출물, 바오밥나무열매 추출물, <br class="moBlock">악마의발톱뿌리추출물, 대추야자열매추출물</p>
+			</div>
+		</article>
+		<!-- // 히라 앰플 화이트닝 소개 -->
+		<!-- 제품 성분 슬라이드 -->
+		<article class="imgSlider">
+			<div class="title">
+				<h2 class="en">7 Ingredients</h2>
+			</div>
+			<div class="imgSlider_wrap">
+				<div class="column pcBlock">
+					<!-- 이미지 슬라이드 -->
+					<div class="slider2">
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_01.jpg" alt="이미지1">
+								<figcaption>
+									<p class="txt1 color1"><strong>부활초</strong>추출물</p>
+									<p class="txt2">피부 항산화 효과</p>
+									<span>강력한 항산화 효과를 가진 성분이<br>외부 스트레스로부터 피부를 보호해 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_02.jpg" alt="이미지2">
+								<figcaption>
+									<p class="txt1 color2"><strong>노팔선인장열매</strong>추출물</p>
+									<p class="txt2">강력한 피부 항산화 효과에 도움</p>
+									<span>단일 식물로는 최다인 40여종의 *피토케미컬 + 8종의 아미노산<br> + 14종의 비타민 + 12종의 미네랄 성분이 강력한 항산화 효과 작용</span>
+									<p class="txt2">피부 재생 효과에 도움</p>
+									<span>SCI급 논문으로 검증된 상처 치유에 효과적인<br>*만노즈(mannose) 성분이 피부 재생에 탁월한 도움을 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_03.jpg" alt="이미지3">
+								<figcaption>
+									<p class="txt1 color3"><strong>노팔선인장꽃</strong>추출물</p>
+									<p class="txt2">강력한 피부 항산화 효과에 도움</p>
+									<span>단일 식물로는 최다인 40여종의 *피토케미컬 + 8종의 아미노산<br> + 14종의 비타민 + 12종의 미네랄 성분이 강력한 항산화 효과 작용</span>
+									<p class="txt2">피부 재생 효과에 도움</p>
+									<span>SCI급 논문으로 검증된 상처 치유에 효과적인<br>*만노즈(mannose) 성분이 피부 재생에 탁월한 도움을 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_04.jpg" alt="이미지4">
+								<figcaption>
+									<p class="txt1 color4"><strong>플랑크톤</strong>추출물</p>
+									<p class="txt2">피부 세포 활력 증진</p>
+									<span>피부의 효소 작용으로 노화를 억제하고<br>피부 세포 활력 증진에 도움을 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_05.jpg" alt="이미지5">
+								<figcaption>
+									<p class="txt1 color5"><strong>대추야자열매</strong> 추출물</p>
+									<p class="txt2">피부 탄력 증진</p>
+									<span>피부에 콜라겐을 생성시켜<br>피부 탄력 증진에 도움을 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_06.jpg" alt="이미지6">
+								<figcaption>
+									<p class="txt1 color6"><strong>바오밥나무열매</strong> 추출물</p>
+									<p class="txt2">피부 모공 수렴</p>
+									<span>피부 모공 케어에 도움을 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/slider_07.jpg" alt="이미지7">
+								<figcaption>
+									<p class="txt1 color7"><strong>악마의 발톱 뿌리</strong> 추출물</p>
+									<p class="txt2">피부 진정 효과</p>
+									<span>치료제로 사용되고 있을 만큼 우수한 항염효과가<br>피부 진정에 도움을 줍니다.</span>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<!--//이미지 슬라이드 -->
+				</div>
+
+				<div class="column moBlock">
+					<!-- 이미지 슬라이드 -->
+					<div class="slider2">
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_01.jpg" alt="이미지1">
+								<figcaption>
+									<p class="txt1 color1"><strong>부활초</strong>추출물</p>
+									<p class="txt2">피부 항산화 효과</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">강력한</span>
+										<span style="white-space: nowrap">항산화</span>
+										<span style="white-space: nowrap">효과를</span>
+										<span style="white-space: nowrap">가진</span>
+										<span style="white-space: nowrap">성분이</span><br class="pcBlock">
+										<span style="white-space: nowrap">외부</span>
+										<span style="white-space: nowrap">스트레스로부터</span>
+										<span style="white-space: nowrap">피부를</span>
+										<span style="white-space: nowrap">보호해</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_02.jpg" alt="이미지2">
+								<figcaption>
+									<p class="txt1 color2"><strong>노팔선인장열매</strong>추출물</p>
+									<p class="txt2">강력한 피부 항산화 효과에 도움</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">단일 식물로는</span>
+										<span style="white-space: nowrap">최다인</span>
+										<span style="white-space: nowrap">40여종의</span>
+										<span style="white-space: nowrap">*피토케미컬</span><br class="moBlock">
+										<span style="white-space: nowrap">+ 8종의</span>
+										<span style="white-space: nowrap">아미노산</span><br class="pcBlock">
+										<span style="white-space: nowrap">+ 14종의</span>
+										<span style="white-space: nowrap">비타민</span>
+										<span style="white-space: nowrap">+ 12종의</span>
+										<span style="white-space: nowrap">미네랄</span>
+										<span style="white-space: nowrap">성분이</span>
+										<span style="white-space: nowrap">강력한</span>
+										<span style="white-space: nowrap">효과</span>
+										<span style="white-space: nowrap">작용</span>
+									</p>
+									<p class="txt2">피부 재생 효과에 도움</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">SCI급</span>
+										<span style="white-space: nowrap">논문으로</span>
+										<span style="white-space: nowrap">검증된</span>
+										<span style="white-space: nowrap">상처</span>
+										<span style="white-space: nowrap">치유에</span>
+										<span style="white-space: nowrap">효과적인</span><br class="pcBlock">
+										<span style="white-space: nowrap">*만노즈(mannose)</span>
+										<span style="white-space: nowrap">성분이</span>
+										<span style="white-space: nowrap">피부</span>
+										<span style="white-space: nowrap">재생에</span>
+										<span style="white-space: nowrap">탁월한</span>
+										<span style="white-space: nowrap">도움을</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_03.jpg" alt="이미지3">
+								<figcaption>
+									<p class="txt1 color3"><strong>노팔선인장꽃</strong>추출물</p>
+									<p class="txt2">강력한 피부 항산화 효과에 도움</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">단일 식물로는</span>
+										<span style="white-space: nowrap">최다인</span>
+										<span style="white-space: nowrap">40여종의</span>
+										<span style="white-space: nowrap">*피토케미컬</span><br class="moBlock">
+										<span style="white-space: nowrap">+ 8종의</span>
+										<span style="white-space: nowrap">아미노산</span><br class="pcBlock">
+										<span style="white-space: nowrap">+ 14종의</span>
+										<span style="white-space: nowrap">비타민</span>
+										<span style="white-space: nowrap">+ 12종의</span>
+										<span style="white-space: nowrap">미네랄</span>
+										<span style="white-space: nowrap">성분이</span>
+										<span style="white-space: nowrap">강력한</span>
+										<span style="white-space: nowrap">효과</span>
+										<span style="white-space: nowrap">작용</span>
+									</p>
+									<p class="txt2">피부 재생 효과에 도움</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">SCI급</span>
+										<span style="white-space: nowrap">논문으로</span>
+										<span style="white-space: nowrap">검증된</span>
+										<span style="white-space: nowrap">상처</span>
+										<span style="white-space: nowrap">치유에</span>
+										<span style="white-space: nowrap">효과적인</span><br class="pcBlock">
+										<span style="white-space: nowrap">*만노즈(mannose)</span>
+										<span style="white-space: nowrap">성분이</span>
+										<span style="white-space: nowrap">피부</span>
+										<span style="white-space: nowrap">재생에</span>
+										<span style="white-space: nowrap">탁월한</span>
+										<span style="white-space: nowrap">도움을</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_04.jpg" alt="이미지4">
+								<figcaption>
+									<p class="txt1 color4"><strong>플랑크톤</strong>추출물</p>
+									<p class="txt2"> 세포 활력 증진</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">피부의</span>
+										<span style="white-space: nowrap">효소</span>
+										<span style="white-space: nowrap">작용으로</span>
+										<span style="white-space: nowrap">노화를</span>
+										<span style="white-space: nowrap">억제하고</span><br class="pcBlock">
+										<span style="white-space: nowrap">피부</span>
+										<span style="white-space: nowrap">세포</span>
+										<span style="white-space: nowrap">활력</span>
+										<span style="white-space: nowrap">증진에</span>
+										<span style="white-space: nowrap">도움을</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_05.jpg" alt="이미지5">
+								<figcaption>
+									<p class="txt1 color5"><strong>대추야자열매</strong> 추출물</p>
+									<p class="txt2">피부 탄력 증진</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">피부에</span>
+										<span style="white-space: nowrap">콜라겐을</span>
+										<span style="white-space: nowrap">생성시켜</span><br class="pcBlock">
+										<span style="white-space: nowrap">피부</span>
+										<span style="white-space: nowrap">탄력</span>
+										<span style="white-space: nowrap">증진에</span>
+										<span style="white-space: nowrap">도움을</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_06.jpg" alt="이미지6">
+								<figcaption>
+									<p class="txt1 color6"><strong>바오밥나무열매</strong> 추출물</p>
+									<p class="txt2">피부 모공 수렴</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">피부</span>
+										<span style="white-space: nowrap">모공</span>
+										<span style="white-space: nowrap">케어에</span>
+										<span style="white-space: nowrap">도움을</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+						<div>
+							<figure>
+								<img src="../images/sub/hira/mo_slider_07.jpg" alt="이미지7">
+								<figcaption>
+									<p class="txt1 color7"><strong>악마의 발톱 뿌리</strong> 추출물</p>
+									<p class="txt2">피부 진정 효과</p>
+									<p class="txt3">
+										<span style="white-space: nowrap">치료제로</span>
+										<span style="white-space: nowrap">사용되고</span>
+										<span style="white-space: nowrap">있을</span>
+										<span style="white-space: nowrap">만큼</span>
+										<span style="white-space: nowrap">우수한</span>
+										<span style="white-space: nowrap">항염효과가</span><br class="pcBlock">
+										<span style="white-space: nowrap">피부</span>
+										<span style="white-space: nowrap">진정에</span>
+										<span style="white-space: nowrap">도움을</span>
+										<span style="white-space: nowrap">줍니다.</span>
+									</p>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+					<!--//이미지 슬라이드 -->
+				</div>
+			</div>
+		</article>
+		<!-- // 제품 성분 슬라이드 -->
+		<!-- 히라 앰플 화이트닝 성분소개 -->
+		<article class="hiraIngredient">
+			<div class="explain wow fadeInUp" data-wow-delay="0.1s">
+				<p class="txt1">화이트 플라워가 선사하는 <br class="moBlock">환하고 깨끗한 피부</p>
+				<p class="txt2 en">White Flower Complex</p>
+				<p class="txt3">깨끗함의 상징인 화이트플라워 11가지가 <br class="moBlock"> 멜라닌 생성을 억제시켜 <br>잡티 없이 환하고 깨끗한 피부를 선사합니다.</p>
+			</div>
+			<div class="hiraExtract">
+				<div class="explain1">
+					<div class="explain wow fadeInUp" data-wow-delay="0.1s">
+						<img src="../images/sub/hira/ingredient01.jpg" alt="">
+						<div class="explain_txt">
+							<div class="txt1">바다수선화 추출물</div>
+							<div class="txt2">
+								<p><em></em><span>우수한 항산화 효과와 멜라닌 생성 억제효과</span></p>
+								<p><em></em><span>수분보유 효과가 우수하여 건조한 피부에 <br class="pcBlock">보습효과</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="explain wow fadeInUp" data-wow-delay="0.1s">
+						<img src="../images/sub/hira/ingredient02.jpg" alt="">
+						<div class="explain_txt">
+							<div class="txt1">알바 수련꽃</div>
+							<div class="txt2">
+								<p><em></em><span>자외선으로 인해 자극 받은 피부를 진정함과 <br class="pcBlock">동시에 외부자극등에 의해 생긴 피부의 <br class="pcBlock">염증 스트레스를 발현하는 색소 침착등을 <br class="pcBlock">효과적으로 막아 피부톤 개선</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="explain wow fadeInUp" data-wow-delay="0.1s">
+						<img src="../images/sub/hira/ingredient03.jpg" alt="">
+						<div class="explain_txt">
+							<div class="txt1">자목련 싹</div>
+							<div class="txt2">
+								<p><em></em><span>멜라닌 생성을 감소시키고 항산화 효과가<br class="pcBlock">있어 피부를 밝고 화사하게 밝혀줌</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="explain2 wow fadeInUp" data-wow-delay="0.3s">
+					<ul class="explain_img">
+						<li>
+							<img src="../images/sub/hira/ingredient04.jpg" alt="">
+							<p>마돈나 백합</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient05.jpg" alt="">
+							<p>에델바이스</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient06.jpg" alt="">
+							<p>붓꽃</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient07.jpg" alt="">
+							<p>연꽃</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient08.jpg" alt="">
+							<p>프리지아</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient09.jpg" alt="">
+							<p>쟈스민</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient10.jpg" alt="">
+							<p>나팔수선화</p>
+						</li>
+						<li>
+							<img src="../images/sub/hira/ingredient11.jpg" alt="">
+							<p>백장미</p>
+						</li>
+					</ul>
+					<ul class="explain_txt">
+						<li><em></em><span>자외선에 의한 색소 침착 현상과 피부 세포 손상을 예방</span></li>
+						<li><em></em><span>피부톤 개선 및 잡티 제거</span></li>
+						<li><em></em><span>피부에 수분을 공급</span></li>
+						<li><em></em><span>피부자극을 진정시켜 피로회복에 우수한 효과</span></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<!-- // 히라 앰플 화이트닝 성분소개 -->
+		<!-- 히라 앰플 화이트닝 특징소개 -->
+		<article class="hiraFeature">
+			<div class="imageCnt">
+				<div class="explain wow fadeInUp" data-wow-delay="0.1s">
+					<img src="../images/sub/hira/explain_icon1.png" alt="">
+					<p class="txt1">극한환경의 식물에너지 + 화이트 플라워의 시너지</p>
+					<p class="txt2">수분 & 탄력 & 화이트닝 솔루션</p>
+					<p class="txt3">생명력 강한 7가지 사막 에너지 식물 83%함유!<br>화이트 플라워 성분의 추가로 탄력, 보습뿐 아니라<br>피부를 환하고 깨끗하게 가꾸어주는<br>화이트닝 효과까지</p>
+				</div>
+				<div class="explain wow fadeInUp" data-wow-delay="0.3s">
+					<img src="../images/sub/hira/explain_icon2.png" alt="">
+					<p class="txt1">강력하지만 가볍고 청량하다</p>
+					<p class="txt2">반전매력 고체 to 앰플미스트</p>
+					<p class="txt3">흐르지 않는 고점성의 고체 제형이<br>특수펌프로 분사되어 피부에 수분공급!<br>쫀쫀한 제형이 피부에 오랜시간 보습막을<br>형성해주어 윤기나는 피부로 가꿔줍니다.</p>
+				</div>
+				<div class="explain wow fadeInUp" data-wow-delay="0.4s">
+					<img src="../images/sub/hira/explain_icon3.png" alt="">
+					<p class="txt1">이제 여러 겹 덧바르지 마세요!</p>
+					<p class="txt2">간편하게 찹찹 뿌리는 앰플마스터</p>
+					<p class="txt3">가벼운 몇 번의 분사로 기능별 제품을 따로<br>사용할 필요없이 앰플 하나로<br>수분 + 주름개선 + 미맥의 효과를 한번에<br>관리 가능한 멀티 기능성 앰플!</p>
+				</div>
+			</div>
+		</article>
+		<!-- // 히라 앰플 화이트닝 특징소개 -->
+		<!-- 히라 영상 모음 -->
+		<article class="hiraVideo">
+			<div class="video_area">
+				<iframe data-keepplaying="" class="ytplayer hidden-xs hidden-sm" src="https://www.youtube.com/embed/yVK3lYS2JrA?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=yVK3lYS2JrA&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1" allowfullscreen=""></iframe>
+				<ul class="video_list">
+					<li class="video_01">
+						<img src="../images/sub/hira/video_HAW_01.jpg" alt="">
+						<p>인포메이션</p>	
+					</li>
+					<li class="video_02">
+						<img src="../images/sub/hira/video_HAW_02.jpg" alt="">
+						<p>인터뷰</p>	
+					</li>
+					<li class="video_03">
+						<img src="../images/sub/hira/video_HAW_03.jpg" alt="">
+						<p>성분</p>	
+					</li>
+					<li class="video_04">
+						<img src="../images/sub/hira/video_HAW_04.jpg" alt="">
+						<p>CF 메이킹 영상</p>	
+					</li>
+					<li class="video_05">
+						<img src="../images/sub/hira/video_HAW_05.jpg" alt="">
+						<p>Before & After 30대</p>	
+					</li>
+					<li class="video_06">
+						<img src="../images/sub/hira/video_HAW_06.jpg" alt="">
+						<p>Before & After 40대</p>	
+					</li>
+				</ul>
+
+				<script>
+				$('.video_list > li').click(function(){
+					$(this).children('p').css('color','#de905c').parent().siblings().children('p').css('color','#fff')
+				});
+				$('.video_01').click(function(){
+					$('.video_area iframe').attr('src','https://www.youtube.com/embed/yVK3lYS2JrA?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=yVK3lYS2JrA&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1')
+				});
+				$('.video_02').click(function(){
+					$('.video_area iframe').attr('src','https://www.youtube.com/embed/ZJs29sJEW5w?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=ZJs29sJEW5w&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1')
+				});
+				$('.video_03').click(function(){
+					$('.video_area iframe').attr('src','https://www.youtube.com/embed/bF9DMumV3wc?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=bF9DMumV3wc&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1')
+				});
+				$('.video_04').click(function(){
+					$('.video_area iframe').attr('src','https://www.youtube.com/embed/XQtetc7HKuQ?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=XQtetc7HKuQ&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1')
+				});
+				$('.video_05').click(function(){
+					$('.video_area iframe').attr('src','https://www.youtube.com/embed/hJp-8q6yF1o?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=hJp-8q6yF1o&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1')
+				});
+				$('.video_06').click(function(){
+					$('.video_area iframe').attr('src','https://www.youtube.com/embed/G8z2bbHZYWY?&amp;vq=hd1080&amp;modestbranding=1&amp;controls=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1&amp;version=3&amp;mute=0&amp;loop=0&amp;playlist=G8z2bbHZYWY&amp;origin=http://www.jonecosmetic.co.kr&amp;allowfullscreen=true&amp;wmode=transparent&amp;iv_load_policy=3&amp;html5=1&amp;vq=hd1080&amp;widgetid=1&amp;enablejsapi=1')
+				});
+				</script>
+			</div>
+		</article>
+		<!-- // 히라 영상 모음 -->
+		<!-- 제품목록 버튼 -->
+		<article class="productListBtn pcBlock">
+			<a href="../hira.html#product_hr" class="btn btn_style3">제품목록 보기</a>
+		</article>
+		<!-- // 제품목록 버튼 -->
+	</section>
+	<!--===== // 콘텐츠 영역 끝 ======-->
+
+	<!--===== 푸터 영역 시작 ======-->
+	<footer id="footer" class="sub_footer">
+		<button type="button" class="go_top"></button>
+		<div class="area clear">
+			<ul class="page">
+				<li><a href="../directions.html">오시는 길</a></li>
+				<li><a href="../brand.html">브랜드 소개</a></li>
+				<li><a  href="http://www.jonecosmetic.shop/" target="_blank" >Shopping Mall</a></li>
+			</ul>
+			<ul class="info">
+				<li>서울시 강남구 언주로 428 모제림빌딩 5층</li><li>Tel. 02-515-1410</li><li>Email :  J.ONE@jonecosmetic.co.kr</li>
+			</ul>
+			<ul class="sns">
+				<li><a href="https://business.facebook.com/pg/Jonecosmetic/about/?entry_point=about_section_header&ref=page_internal" target="_blank"><img src="../images/facebook_btn.png"alt="페이스북 바로가기"></a></li>
+				<li><a href="https://blog.naver.com/jone_cosmetic" target="_blank"><img src="../images/naver_btn.png" alt="네이버블로그 바로가기"></a></li>
+				<li><a href="https://www.instagram.com/j.onecosmetic/" target="_blank"><img src="../images/instagram_btn.png" alt="인스타그램 바로가기"></a></li>
+			</ul>
+			<address>© by J.ONE, All Rights Reserved.</address>
+		</div>
+	</footer>
+	<!--===== // 푸터 영역 끝 ======-->
+	<script>
+$(window).ready(function() {
+chg_resize();
+
+	$(window).resize(function() {
+		chg_resize();
+	});
+	function chg_resize(){
+		if( window.matchMedia('(max-width: 768px)').matches) {
+			// <= 768
+			var btnWrap = $('.btnWrap').detach();
+			$('.productInfo').append(btnWrap);
+
+			//slick 페이징 위치 변경
+			var pagingbtn = $('.productInfo .slick-dots').detach();
+			$('.prd_info').prepend(pagingbtn);
+
+			
+		}else{
+			// >768
+			var btnWrap = $('.btnWrap').detach();
+			$('.prd_info').append(btnWrap);
+
+			var pagingbtn = $('.productInfo .slick-dots').detach();
+			$('.prd_info').append(pagingbtn);		
+		}
+	}
+});
+</script>
+</body>
+</html>

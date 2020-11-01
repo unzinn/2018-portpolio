@@ -1,0 +1,102 @@
+﻿@charset "utf-8";
+
+/* =========================================공통========================================== */
+.title p {font-size: 18px;font-weight: 300;color: #858585;}
+.txt {position: absolute;}
+.txt .txt1 {font-size: 50px;font-weight: 400;}
+.txt .txt2 {font-size: 35px;}
+#main .row_txt {padding-left: 0;}
+#main .row_txt h3 {font-size: 35px;font-weight: 400;color: #555;}
+#main .row_txt p {margin-top: -0.2em;font-size: 20px;color: #555;}
+#main .row .view a {width: 151px;}
+/* 영상 */
+#main .bg {min-height:815px;}
+#main .bg video {position: absolute;width: 100%;height: 100%;top: 0;left: 0;right: 0;bottom: 0;width: 100%;-o-object-fit: cover;object-fit: cover;display: block;}
+#main .bg iframe {width: 100%;height: 815px;}
+#main .bg .backBg {position: absolute;width: 100%;height: 100%;left: 0;top: 0;background-color: rgba(0,0,0,0.3);opacity:0;}
+#main .bg .backBg .txt {min-width:125px;top: 45%;left: 0;right: 0;margin: auto;text-align: center;color: #fff;opacity:0;}
+#main .bg .backBg .txt .txt1 {font-weight: 500;}
+#main .bg .backBg .txt .txt2 {margin: 0px 0 1.2em;font-weight: 400;}
+#main .bg .backBg .btn {font-size: 22px;}
+/* Our Brands */
+#main .brandIntro .row {width: 1220px;margin: auto;}
+#main .row > li {padding: 0;}
+#main .row > li.col_4:nth-child(n+3) {margin-top: 3.5em;}
+#main .row .row_img img {width: 100%;height: 365px;max-width:585px;max-height:365px;}
+#main .row .row_img::after {background: #fff;}
+#main .row .row_img.scale {width: 100%;height: 365px !important;}
+#main .row .row_txt {margin-top: 1em;}
+
+/* 배너 */
+#main .main_banner {padding: 100px 0 70px;color: #fff;background: url("../images/full_bnr_img.jpg") center center no-repeat;-webkit-background-size: cover;background-size: cover;}
+#main .main_banner .bnr_logo {margin-bottom: 1em;}
+#main .main_banner .bnr_logo img {margin: auto;}
+#main .main_banner h3 {font-size: 40px;font-weight: 400;margin-bottom: 0.8em;}
+#main .main_banner p {font-size: 25px;font-weight: 400;}
+#main .main_banner p + p {padding: 0 30px;font-size: 20px;font-weight: 100;}
+#main .product {overflow: hidden;/*width:1480px;*/padding: 0 130px;margin: auto;}
+#main .product .product_area {position: relative;width: 1220px;margin: auto;}
+
+@media screen and (max-width:1600px){
+#main .product .product_area {width: 1180px;}
+}
+@media screen and (max-width:1400px){
+#main .brandIntro .row {width: 1100px;}
+#main .product .product_area {width: auto;}
+}
+@media screen and (max-width:1220px){
+#main .brandIntro .row {width: auto;}
+#main .row .row_img.scale {height: auto !important;}
+#main .row .row_img img {height: 305px;max-height:305px;}
+#main .row .row_txt {margin-top: 0.5em;}
+}
+
+@media screen and (max-width: 768px){
+#main .bg {min-height:490px;}
+#main .bg .backBg {display: none;}
+#main .moBlock {display: block;}
+#main .moBlock .txt {top: 60%;right: 5%;margin: auto;text-align: right;color: #fff;opacity:0;}
+#main .moBlock .txt .txt1 {font-size: 30px;}
+#main .moBlock .txt .txt2 {font-size: 25px;}
+#main .moBlock .txt .btn {margin-top: 15px;font-size: 18px;}
+#main .brandIntro .area{padding: 15%}
+#main .row > li {margin-bottom: 2em;}
+#main .row > li:last-child {margin-bottom: 0;}
+
+.title p {font-size: 16px;}
+
+/* Our Brands */
+#main .brandIntro .row {width: auto;}
+#main .row > li.col_4:nth-child(n+3) {margin-top: 2em;}
+#main .row .row_img img {width: 100%;max-width:100%;height: auto !important;max-height:400px;}
+#main .mo_view {width: 100%;height: 50px;line-height: 50px;position: absolute;bottom:0;background-color: rgba(0,0,0,0.5);text-align: center;color: #fff;font-size: 25px;}
+#main .row_txt {height: 30px;max-height:30px;margin-top: 1em;}
+#main .row_txt p {font-size: 16px;}
+#main .main_banner {height: 330px;padding: 40px 0 30px;margin-bottom: 15% !important;}
+#main .main_banner h3 {font-size: 25px;}
+#main .main_banner p {font-size: 16px;}
+#main .main_banner p + p {font-size: 15px;}
+#main .main_banner .bnr_logo img {width: 140px;}
+#main .product {padding: 0;margin-bottom: 15% !important;}
+}
+
+@media screen and (max-width: 560px){
+#main .brandIntro .area{padding: 5%}
+#main .row > li {margin-bottom: 1em;}
+}
+
+@media screen and (max-width: 460px){
+#main .bg {min-height:420px;}
+#main .moBlock .txt .txt1 {font-size: 25px;}
+#main .moBlock .txt .txt2 {font-size: 20px;}
+#main .moBlock .txt .btn {padding: 10px 25px;margin-top: 10px;font-size: 16px;}
+}
+
+@media screen and (max-width: 320px){
+#main .bg {min-height:320px;}
+#main .moBlock .txt {top: 46%;}
+#main .row .row_img img {max-height:200px;}
+#main .row .row_img.scale {height: 200px;}
+#main .main_banner .bnr_logo img {width: 120px;}
+
+}

@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Disneyland Park</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Crimson+Text|IBM+Plex+Serif" rel="stylesheet">
+  <link rel="shortcut icon" href="icon.ico">
+  <!-- 제이쿼리 설치 cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="jquery-animate-css-rotate-scale.js"></script>
+   <script src="common.js"></script>
+  <!-- 스크립트 시작    -->
+  <script>
+		
+  </script>
+  <style>
+/*	font-family: 'PT Sans', sans-serif; */
+		* { margin: 0; padding: 0; list-style: none; }
+		a { text-decoration: none; color:inherit; }
+		body,html { height:100%; }
+		body { background:#FFF url('bg1_0.jpg') 0 0 no-repeat; }
+		#bg_color1 { width:100%; height:100%; position:fixed; top:0; background:#FFF url('bg1_0.jpg') center center no-repeat; background-size:cover; }
+		#bg_color2 { width:100%; height:100%; position:fixed; top:0; background:#FFF url('bg2_0.jpg') center center no-repeat; background-size:cover; }
+
+		#wrap { height:6480px; position:relative;	 font-family: 'PT Sans', sans-serif; }
+		#wrap>div { min-width:1900px; }
+/* home */
+		#section1 { width:100%; height:1080px; position:absolute; bottom:0; }
+		#section_a1 { width:100%; min-width:1300px; height:800px; position:absolute; bottom:0; background:url('castle.png') center bottom no-repeat; }
+		#section_a2 { width:1300px; height:1000px; position:absolute; bottom:0; left:0; right:0; margin:auto; }
+		#section_a2 #castle1 { position:absolute; left:90px; bottom:240px; }
+		#section_a2 #castle2 { position:absolute; left:180px; bottom:300px; }
+		#section_a2 #castle3 { position:absolute; left:420px; bottom:270px; }
+		#section_a2 #castle7_1 { position:absolute; left:415px; bottom:405px; }
+		#section_a2 #section_a2_b { position:absolute; left:530px; bottom:600px; }
+		#section_a2 #castle4 { position:absolute; }
+		#section_a2 #castle4_1 { position:absolute; left:61px; bottom:-200px; }
+		#section_a2 #castle6 { position:absolute; right:330px; bottom:290px; }
+		#section_a2 #castle6_1 { position:absolute; right:425px; bottom:380px; }
+		#section_a2 #castle7 { position:absolute; right:420px; bottom:405px; }
+		#section_a2 #castle8 { position:absolute; right:215px; bottom:270px; }
+		#section_a2 #castle9 { position:absolute; right:185px; bottom:290px; }
+		#section_a2 #castle10 { position:absolute; right:50px; bottom:180px; }
+		#section_a2 #section_a2_a { position:absolute; right:595px; bottom:550px; }
+		#section_a2 #section_a2_a #castle5 { position:absolute; }
+		#section_a2 #section_a2_a #castle5_1 { position:absolute; bottom:-80px; left:12px; }
+		#section_a2 #section_a2_a #castle5_2 { position:absolute; bottom:0px; left:16px; }
+		#section_a2 #section_a2_a #castle5_3 { position:absolute; bottom:20px; right:-91px; }
+		#section1 #cloud { width:100%; height:1000px; position:absolute; bottom:0; left:0; right:0; margin:auto; }
+		#section1 #cloud #cloud1 { position:absolute; top:200px; left:-50px; opacity:0; }
+		#section1 #cloud #cloud2 { position:absolute; top:50px; left:260px; opacity:0; }
+		#section1 #cloud #cloud3 { position:absolute; top:200px; right:110px; opacity:0; }
+		#section2 .menu { position:absolute; top:120px; }
+		#section3 .menu { position:absolute; top:100px; }
+		#section4 .menu { position:absolute; top:80px; }
+		#section5 .menu { position:absolute; top:60px; }
+		#section6 .menu { position:absolute; top:34px; }
+		.menu { width:90%; position:absolute; top:140px; left:-80px; right:0; margin:auto; text-align:center; }
+		.menu #arrow { color:#000043; width:400px; height:25px; line-height:25px; position:absolute; top:70px; left:-8px; right:0; margin:auto; text-align:center; }
+		.menu #arrow li { float:left; }
+		.menu #arrow li:nth-child(1) { width:30px; height:25px; cursor:pointer; }
+		.menu #arrow li:nth-child(2) { width:340px; letter-spacing:3px; font-size:18px; font-weight:600; position:absolute; left:0; right:0; margin:auto; }
+		.menu #arrow li:nth-child(3) { width:30px; height:25px; float:right; cursor:pointer; }
+		#door { width:160px; height:128px; position:absolute; bottom:65px; left:-5px; right:0; margin:auto; }
+		#door #play { width:33px; position:absolute; top:-5px; left:0; right:0; margin:auto; }
+		#door #play img { width:100%; }
+		#door .popup_b { position:absolute; left:0; right:3px; top:0; bottom:110px; margin:auto; }
+		#door_l { position:absolute; bottom:65.5px; left:4px; cursor:pointer; }
+		#door_r { position:absolute; bottom:65.5px; right:8px; cursor:pointer; }
+		#ddd { width:160px; height:130px; position:absolute; left:-5px; right:0; bottom:130px; margin:auto; cursor:pointer; z-index:999; }
+		#popup { width:500px; height:200px; position:absolute; left:20px; right:0; bottom:450px; margin:auto; }
+		.popup_b { width:28px; height:26px; background-color:#000; border-radius:7px; position:absolute; display:none; cursor:pointer; }
+		.popup_b:hover { background-color:#2d2d2d; }
+		#popup ul:nth-child(1) { top:40px; left:37px; }
+		#popup ul:nth-child(2) { top:0; left:250px; }
+		#popup ul:nth-child(3) { bottom:25px; right:0px; }
+		.popup_b li:nth-child(1) { width:15px; height:1px; background-color:#FFF; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }
+		.popup_b li:nth-child(2) { width:1px; height:15px; background-color:#FFF; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }
+		#character { width:600px; height:400px; position:absolute; left:50px; right:0; bottom:350px; margin:auto; }
+		#character #micky { position:absolute; top:120px; left:40px; opacity:0; }
+		#character #minnie { position:absolute; top:68px; right:265px; opacity:0; }
+		#character #goofy { position:absolute; bottom:0; right:10px; opacity:0; }
+/* home - video */
+		#section1 #video1 { display:none; }
+		#section1 #video1 video { position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; width:100%; height:100%; z-index:999; }
+		#section1 #video1 div { cursor:pointer; }
+		#section1 #video1_close { position:absolute; top:140px; right:40px; z-index:1000; display:none; }
+		#section1 #video1_close img { cursor:pointer; }
+/* home - micky popup */
+		#popupb { width:100%; height:100%; position:absolute; top:0; background-color:rgba(0,0,0,0.5); display:none; z-index:9997; }
+		#popup1 { display:none; }
+		#popup2 { display:none; }
+		#popup3 { display:none; }
+		.popup_no { position:absolute; top:115px; bottom:0; left:0; right:0; margin:auto; width:580px; height:580px; background-color:#FFF; border-radius:400px; z-index:9998; }
+		.popup_no>ul { position:absolute; top:-100px; left:-50px; right:0; width:680px; height:130px; }
+		.popup_no>ul li { width:230px; height:230px; border-radius:150px; font-size:50px; text-align:center; }
+		.popup_no>ul li:nth-child(1) { float:left; background-color:#FFF; line-height:230px; color:rgba(0,0,0,0.5); transition:0.5s; cursor:pointer; }
+		.popup_no>ul li:nth-child(1):hover { color:#000; }
+		.popup_no>ul li:nth-child(2) { position:absolute; width:350px; height:50px; left:0; right:0; margin:auto; border-radius:0; font-size:30px; font-weight:900; text-align:center; letter-spacing:1px; margin-top:180px; }
+		.popup_no>ul li:nth-child(3) { float:right; background-color:#FFF; line-height:230px; color:rgba(0,0,0,0.5); transition:0.5s; cursor:pointer; }
+		.popup_no>ul li:nth-child(3):hover { color:#000; }
+		.popup_no .popup_p { width:400px; height:220px; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; }
+		.popup_no .popup_p p:nth-child(2) { margin:5px 0; }
+		#popup1 .popup_no .popup_p { width:300px; text-align:center; }
+		#popup1 .popup_no .popup_p p img { width:25px; height:25px; vertical-align:top; margin-right:8px; }
+		#popup1 .popup_no .popup_p p:nth-child(2) { margin:30px 0; }
+		.popup_no .popup_p p span { font-size:17px; font-weight:600; line-height:23px; }
+
+		.popup_no .popup1_c { width:100px; height:100px; position:absolute; bottom:30px; left:0; right:0; margin:auto; text-align:center; cursor:pointer; }
+		.popup_no .popup1_c .popup1_c_1 { width:65px; position:absolute; left:0; right:0; top:20px; margin:auto; }
+		.popup_no .popup1_c .popup1_c_1 img { width:100%; }
+		.popup_no .popup1_c .popup1_c_2 { width:75px; height:50px; border-top:1px solid #000; position:absolute; bottom:0; left:0; right:0; margin:auto; text-align:center; line-height:30px; letter-spacing:1px; background-color:#FFF; cursor:pointer; }
+		
+
+		#popup2 .popup_p { width:500px; height:400px; }
+		#popup2 .popup_p p img { width:80%; position:absolute; left:0; right:0; top:45px; margin:auto; cursor:pointer; } 
+		#popup_p2 { width:100%; height:100%; position:absolute; top:0; background-color:rgba(0,0,0,0.5); z-index:9999; display:none; }
+		#popup_p2 ul { width:100%; position:absolute; top:0; bottom:0; left:0; right:0; margin:auto; overflow:hidden; }
+		#popup_p2 ul li { width:80%; height:768px; position:absolute; top:70px; bottom:0; left:470px; right:0; margin:auto; }
+
+		#popup3 .popup_p { top:-100px; }
+		#popup3 .popup_p #email { width:160px; height:30px; border-radius:20px; border:1px solid #000; line-height:30px; text-align:center; cursor:pointer; position:relative; left:0; right:0; top:7px; margin:auto; }
+		#popup3 .popup_p #email span { width:20px; position:absolute; top:0; bottom:0; right:18px; margin:auto; }
+		#popup3 .popup_p #email img { vertical-align:top; margin:3px 10px 0 -15px; }
+		#popup3 .popup_p p:nth-child(1) { margin-top:7px; margin-bottom:-3px; }
+		#popup3 .popup_p p:nth-child(2) { font-size:15px; }
+		#popup3 .popup_p p:nth-child(4) { margin-top:40px; margin-bottom:-3px; }
+		#popup3 .popup_p ul { width:100%; height:65px; margin-top:5px; }
+		#popup3 .popup_p ul li { width:30%; float:left; }
+		#popup3 .popup_p ul li:nth-child(2) { margin:0 5%; }
+		#popup3 .popup_p ul li:nth-child(3) { line-height:18px; }
+		#popup3 .popup_p ul li span { color:#6394d7; display:inline-block; margin-top:2px; line-height:20px; }
+
+/* land */
+		#section2 { width:100%; height:1080px; position:absolute; bottom:1080px; overflow:hidden; }
+		#section2 #cloud_img div { width:750px; }
+		#section2 #cloud_img div img { width:100%; }
+		#section2 #cloud_img div:nth-child(1) { position:absolute; top:20px; left:-100px; }
+		#section2 #cloud_img div:nth-child(2) { position:absolute; right:-50px; bottom:30px; }
+		#section2 #land { width:71%; height:620px; position:absolute; top:160px; bottom:0; left:40px; right:0; margin:auto; }
+		#section2 #land li { width:120px; height:540px; bottom:-35px; float:left; margin-right:25px; cursor:pointer; transition:1s; overflow:hidden; }
+		#section2 #land li:nth-child(1) { width:150px; height:620px; bottom:0; position:relative; transform:skew(9deg,0); transition:0.5s; background:url('land.jpg') 0 60% no-repeat; background-size:100%; }
+		#section2 #land li:nth-child(1):hover { background-size:100%; cursor:default; }
+		#section2 #land li:nth-child(1) h1 { font-size:45px; left:-175px; right:0; top:-10px; bottom:0; }
+		#section2 #land li:nth-child(1):hover h1 { font-size:45px; left:-175px; right:0; top:-10px; bottom:0; letter-spacing:9px; }
+		#section2 #land li:nth-child(2) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(2) img { width:140px; height:664px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(3) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(3) img { width:140px; height:619px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(4) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(4) img { width:140px; height:622px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(5) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(5) img { width:140px; height:622px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(6) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(6) img { width:140px; height:622px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(7) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(7) img { width:140px; height:622px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(8) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(8) img { width:140px; height:622px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:nth-child(9) { position:relative; transform:skew(9deg,0); background-size:100%; }
+		#section2 #land li:nth-child(9) img { width:140px; height:622px; position:absolute; top:0; bottom:0; }
+		#section2 #land li:hover { background-size:110%; }
+		#section2 #land li h1 { color:#fff; position:absolute; width:530px; height:50px; line-height:35px; text-align:left; transform:rotate(90deg); margin:auto; left:-207px; right:0; top:70px; bottom:0; letter-spacing:9px; font-size:25px; transition:0.5s; }
+		#section2 #land li h1 span { font-size:20px; }
+		#section2 #land li:hover h1 { letter-spacing:14px; }
+
+/* ticket */
+		#section3 { width:100%; height:1080px; position:absolute; bottom:2160px; color:#fff; }
+		#section3 #cloud_3 { width:638px; height:425px; position:absolute; top:205px; right:130px; margin:auto; }
+		#section3 #wrap_3 { width:70%; position:absolute; bottom:200px; left:-80px; right:0; margin:auto; }
+		#section3 #wrap_3 li:nth-child(1) { width:50%; float:left; }
+		#section3 #wrap_3 li:nth-child(1) img { width:100%; vertical-align:top; }	
+		#section3 #wrap_3 li:nth-child(2) { width:50%; height:500px; background-color:rgba(0,0,0,0.2); float:left; text-align:center; position:relative; }
+		#section3 #wrap_3 li:nth-child(2) #ticket1 { width:98%; position:absolute; top:0; left:0; padding:100px 10px; display:block; }
+		#section3 #wrap_3 li:nth-child(2) #ticket1 p span { color:#6394d7; font-size:20px; font-weight:600; }
+		#section3 #wrap_3 li:nth-child(2) #ticket1 p:nth-child(2) { margin:40px 0; } 
+		#section3 #wrap_3 li:nth-child(2) #ticket1 p:nth-child(3) span { color:#284160; font-size:18px; font-weight:900; }
+		.button { width:160px; height:35px; position:relative; left:0; right:0; bottom:-80px; margin:auto; cursor:pointer; overflow:hidden; }
+		.button .reservation { width:160px; height:35px; line-height:35px; position:absolute; border:1px solid #fff; box-sizing:border-box; font-size:15px; letter-spacing:1px; background:none; color:#fff; }
+		.button .reservation2 { width:160px; height:35px; line-height:35px; position:absolute; box-sizing:border-box; left:-160px; border:1px solid #6394d7; background-color:#6394d7; transition:0.5s; }
+		.button:hover .reservation2 { left:0; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 { width:99%; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; padding:50px 5px; display:none; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 img:nth-child(1) { width:85%; position:absolute; left:0; right:0; margin:auto; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 img:nth-child(3) { width:30px; height:30px; position:absolute; top:10px; right:15px; cursor:pointer; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 p { position:absolute; left:0; right:0; margin:auto; font-size:19px; font-weight:600; letter-spacing:1px; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 dl { width:79.8%; height:140px; position:absolute; left:0; right:0; top:95px; margin:auto; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 dl dt { width:50px; height:50px; border-radius:50px; border:3px solid #08275c; line-height:50px; float:left; margin-right:11.5%; cursor:pointer; transition:0.5s; display:inline-block; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 dl dt:nth-child(5) { margin-right:0; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 dl dt div { width:55px; display:block; font-size:13px; line-height:12px; color:rgba(255,255,255,0.6); margin-top:10px; margin-left:-2px; transition:0.7s; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 dl dt:hover div { color:#fff; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 dl dt div span { font-size:10px; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_n { width:82%; height:100px; position:absolute; top:190px; left:0; right:0; margin:auto; text-align:left; opacity:0; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_n p span:nth-child(2) { width:20px; height:10px; border:2px solid #fff; border-radius:15px; text-align:center; line-height:10px; cursor:pointer; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_n p span:nth-child(4) { width:20px; height:10px; border:2px solid #fff; border-radius:15px; text-align:center; line-height:10px; cursor:pointer; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_n p { position:absolute; top:50px; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_n #n1 { left:0; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_n #n2 { left:300px; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_y { width:82%; position:absolute; top:230px; left:0; right:0; margin:auto; text-align:left; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_y h5 { margin-bottom:10px; font-weight:100; }
+		#section3 #wrap_3 li:nth-child(2) #ticket2 #ticket_y h6 { margin-bottom:10px; font-weight:100; }
+
+/* character */
+		#section4 { width:100%; height:1080px; position:absolute; bottom:3240px; color:#fff; text-align:center; }
+		#sec4_wrap { width:65%; height:670px; position:absolute; bottom:160px; left:-80px; right:0; margin:auto; } 
+		#sec4_wrap #sec4_img { width:85%; height:40%; position:relative; top:20px; left:0; right:0; margin:auto; }
+		#sec4_wrap #sec4_img li { width:230px; height:230px; float:left; position:relative; bottom:0; cursor:pointer; text-align:center; margin-right:43px; }
+/* bottom : 0 -> bottom:10px; */
+		#sec4_wrap #sec4_img li:nth-child(4) { margin-right:0; }
+		#sec4_wrap #sec4_img li p { text-align:center; color:#000; letter-spacing:1px; transition:1s; position:absolute; bottom:17px; left:0; right:0; margin:auto; }
+
+		#sec4_wrap #sec4_text { width:100%; height:350px; position:relative; bottom:-50px; background:url('ch_text.png') 0 0 no-repeat; background-size:cover; }
+		#sec4_wrap #sec4_text #sec4_text_left { width:30%; height:80%; position:absolute; left:5%; top:0; bottom:0; margin:auto; }
+		#sec4_text #sec4_text_left #sec4_text_img { width:105%; height:90%; border-radius:5.5%; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background:url('ch_box.jpg') center center no-repeat; background-size:cover; }
+		#sec4_wrap #sec4_text #sec4_text_right { width:55%; height:55%; color:#000; position:absolute; right:2%; top:0; bottom:0; margin:auto; padding:3%; font-family: 'Cormorant Garamond', serif; }
+		#sec4_wrap #sec4_text #sec4_text_right p { line-height:27px; font-size:17px; }
+		#sec4_wrap #sec4_text #sec4_button_wrap { width:160px; height:160px; position:absolute; top:-80px; right:-80px; cursor:pointer; }
+		#sec4_wrap #sec4_text #sec4_button_wrap #sec4_button { width:160px; height:160px; border-radius:100px; border:3px solid #fff; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; box-shadow:3px 3px 2px #555; }
+		#sec4_wrap #sec4_text #sec4_button_wrap #sec4_button_a { width:112px; height:48px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; overflow:hidden; color:#5980b6; }
+		#sec4_wrap #sec4_text #sec4_button_wrap #sec4_button_a li:nth-child(1) { font-size:20px; font-weight:900; }
+		#sec4_wrap #sec4_text #sec4_button_wrap #sec4_button_a li:nth-child(1) span { color:#fff; display:block; font-size:13px; text-align:left; }
+		#sec4_wrap #sec4_text #sec4_button_wrap #sec4_button_a li:nth-child(2) { width:100%; height:3px; background-color:#5980b6; position:absolute; left:0; bottom:0; display:none; }
+
+/* entertainment */
+		#section5 { width:100%; height:1080px; position:absolute; bottom:4320px; text-align:center; }
+		#section5 #section5_img_wrap { width:100%; height:100%; position:relative; left:-100px; overflow:hidden; }
+		#section5 #section5_img_wrap #section5_img_slide { width:11720px; height:49%; position:absolute; left:-4080px; right:0; top:50px; bottom:0; margin:auto; }
+		/*	left : -2040	*/
+		#section5 #section5_img_wrap #section5_img_slide img { width:1000px; height:530px; float:left; margin:0 520px 0 520px; }
+		#section5 #section5_img_wrap #section5_img_slide img:nth-child(6) { margin-right:0; margin-left:328px; }
+		#section5 #section5_black { width:100%; height:100%; position:absolute; top:0; background-color:rgba(0,0,0,0.7); }
+		#section5 #wrap5_slidewrap { width:100%; height:400px; position:absolute; top:50px; bottom:0; left:-140px; right:0; margin:auto; overflow:hidden; }
+		#section5 #wrap5_slidewrap2 { width:3150px; height:400px; position:absolute; left:-100px; }
+		/* left : -100 */
+		#section5 #wrap5_slidewrap #wrap5_slidewrap2 #wrap5_slide { width:2870px; height:400px; left:450px; position:absolute; color:#fff; }
+ 		#section5 #wrap5_slidewrap #wrap5_slidewrap2 #wrap5_slide li { width:400px; height:400px; float:left; position:relative; margin-right:50px; cursor:pointer; }
+		#section5 #wrap5_slidewrap #wrap5_slide li:nth-child(1) { margin-left:0; }
+		#section5 #wrap5_slidewrap #wrap5_slide li:nth-child(7) { margin-right:0; }
+		#section5 #wrap5_slidewrap #wrap5_slide li div { width:400px; height:222px; position:relative; overflow:hidden; background-color:#fff; }
+		#section5 #wrap5_slidewrap #wrap5_slide li div img { width:100%; vertical-align:top; position:absolute; left:0; top:0; bottom:0; background-size:100%; }
+		#section5 #wrap5_slidewrap #wrap5_slide li:hover h2 { opacity:1; }
+		#section5 #wrap5_slidewrap #wrap5_slide li h1 { font-size:17px; margin-top:25px; }
+		#section5 #wrap5_slidewrap #wrap5_slide li h2 { width:100%; height:1px; background-color:#FFF; margin:15px 0; opacity:0; transition:0.3s; }
+		#section5 #wrap5_slidewrap #wrap5_slide li h3 { font-weight:400; position:absolute; left:0; right:0; bottom:75px; margin:auto; }
+		#section5 #wrap5_slidewrap #wrap5_slide li p { width:380px; height:50px; font-size:15px; line-height:17px; color:rgba(255,255,255,0.6); position:absolute; left:0; right:0; bottom:15px; margin:auto; }
+		#section5 #wrap_5line { width:68.3%; height:1px; background-color:rgba(255,255,255,0.5); position:absolute; left:350px; bottom:115px; }
+
+/* gallery */
+		#section6 { width:100%; height:1080px; position:absolute; bottom:5400px; overflow:hidden; background-color:#000; }
+		#section6 #sec6_bg { width:100%; height:100%; background:url('entertainment/2.jpg'); background-size:cover; }
+		#section6 #sec6_bg video { width:2050px; height:1240px; position:absolute; top:-115px; left:0; }
+		#sec6_content { width:60%; height:50%; position:absolute; top:0; bottom:150px; left:0; right:200px; margin:auto; color:#fff; }
+		#sec6_content #sec6_box1 { width:800px; height:75px; position:absolute; top:20%; left:0; text-align:center; }
+		#sec6_content #sec6_box1 .sec6_box { width:10%; height:100%; float:left; position:relative; cursor:pointer; }
+		#sec6_content #sec6_box1 .sec6_box div { position:absolute; left:0; right:0; top:10px; margin:auto; color:#fff; opacity:0.6; }
+		#sec6_content #sec6_box1 .sec6_box ul { width:100%; height:2.5%; position:absolute; bottom:0; overflow:hidden; }
+		#sec6_content #sec6_box1 .sec6_box ul li:nth-child(1) { width:100%; height:100%; position:absolute; bottom:0; left:0; background-color:rgba(255,255,255,0.5); }
+		#sec6_content #sec6_box1 .sec6_box ul li:nth-child(2) { width:100%; height:100%; position:absolute; bottom:0; left:-100%; background-color:#fff; }
+		#sec6_content #sec6_box1 .sec6_box:nth-child(1) ul li:nth-child(2) { left:0; }
+		#sec6_content #sec6_box1 .sec6_box:nth-child(1) div { top:5px; opacity:1; }
+		#sec6_content #sec6_box2 { width:6%; height:16%; position:absolute; top:0; left:800px; }
+		#sec6_content #sec6_box2 h5 { font-size:18px; width:35px; height:35px; line-height:35px; border-radius:30px; text-align:center; position:absolute; left:0; right:0; margin:auto;  }
+		#sec6_content #sec6_box2 h5:nth-child(1) { top:5px; transform-origin:0% 300%; cursor:pointer; }
+		#sec6_content #sec6_box2 h5:nth-child(2) { bottom:0; transform-origin:0% 300%; cursor:pointer; }
+		#sec6_content #sec6_box3 { width:70%; height:50%; position:absolute; bottom:0; right:0; }
+
+/* slidemenu */
+		#slidemenu_wrap {  }
+		#slidemenu { position:fixed; width:4%; height:97%; right:15px; bottom:0; }
+		.circle { width:58px; height:58px; border-radius:50px; background-color:rgba(255,255,255,0.3); position:fixed; right:32px; top:3%; transition:0.5s; cursor:pointer; }
+		.circle ul { width:24px; height:14px; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+		.circle ul li { width:24px; height:2px; display:block; background-color:#fff; }
+		.circle ul li:nth-child(2) { margin:4px 0; }
+		#slidemenu #line { width:1px; height:94%; background-color:#FFF; position:absolute; bottom:0; left:0; right:17px; margin:auto; }
+		#slidemenu #line .line_a:nth-child(1) { margin-top:40px; }
+		#slidemenu #line .line_a { width:3px; height:100px; background-color:#FFF; display:block; margin-bottom:40px; position:relative; overflow:hidden; }
+		#slidemenu #line .line_a li { width:100%; height:100%; position:absolute; }
+		#slidemenu #line .line_a:nth-child(1) li:nth-child(1) { top:0; }
+		#slidemenu #line .line_a li:nth-child(2) { background-color:#6394d7; top:100px; }
+		#slidemenu .slidemenu_img { width:40px; height:100px; position:relative; bottom:0; right:-40px; margin-bottom:40px; cursor:pointer; }
+		#slidemenu>ul:nth-child(2) { margin-top:98px; }
+		#slidemenu .slidemenu_img li:nth-child(1) { width:100%; height:100%; }
+		#slidemenu .slidemenu_img li:nth-child(1) img { position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }
+		#slidemenu .slidemenu_img li { position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; }
+		#slidemenu .slidemenu_img li:nth-child(2) { background-color:blue; top:100px; }
+
+		#slidemenu_n { width:100%; height:100%; position:fixed; right:0; background-color:rgba(0,0,0,0.5); display:none; }
+		#slidemenu_n_1 { width:17.3%; height:100%; position:absolute; right:-17.3%; background-color:rgba(99,148,215,0.8); }
+		#slidemenu_n_1 li { width:40%; margin:120px 0 0 320px; text-align:right; color:#fff; transition:0.5s; cursor:pointer; }
+		#slidemenu_n_1 li:nth-child(1) { margin-top:175px; }
+		#slidemenu_n_2 { width:3.3%; height:100%; position:absolute; right:-5%; background-color:#4272b3; }
+		#slidemenu_n_2 li { transform:rotate(90deg); width:3px; height:100px; margin-top:40px; margin-left:-19px; font-size:32px; color:#405d83; transition:0.5s; cursor:pointer; }
+		#slidemenu_n_2 li:nth-child(1) { margin-top:120px; }
+	
+  </style>
+ </head>
+ <body>
+		<div id="bg_color">
+			<div id="bg_color1"></div>
+			<div id="bg_color2"></div>
+		</div>
+
+		<div id="wrap">
+<!-- home -->
+			<div id="section1">
+				<div id="cloud">
+					<img src="cloud1.png" alt="" id="cloud1"/>
+					<img src="cloud2.png" alt="" id="cloud2"/>
+					<img src="cloud3.png" alt="" id="cloud3"/>
+				</div>
+				<div id="character">
+					<div id="character_wrap">
+						<img src="micky.png" alt="" id="micky">
+						<img src="minnie.png" alt="" id="minnie">
+						<img src="goofy.png" alt="" id="goofy">
+					</div>
+				</div>
+				<div id="section_a2">
+					<img src="castle1.png" alt="" id="castle1"/>
+					<img src="castle2.png" alt="" id="castle2"/>
+					<img src="castle3.png" alt="" id="castle3"/>
+					<img src="castle7_1.png" alt="" id="castle7_1"/>
+					<img src="castle8.png" alt="" id="castle8"/>
+					<img src="castle6.png" alt="" id="castle6"/>
+					<img src="castle6_1.png" alt="" id="castle6_1"/>
+					<div id="section_a2_a">
+						<img src="castle5_3.png" alt="" id="castle5_3"/>
+						<div>
+							<img src="castle5_2.png" alt="" id="castle5_2"/>
+							<div>
+								<img src="castle5_1.png" alt="" id="castle5_1"/>
+								<div>
+									<img src="castle5.png" alt="" id="castle5"/>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="section_a2_b">
+						<img src="castle4_1.png" alt="" id="castle4_1"/>
+						<div>
+							<img src="castle4.png" alt="" id="castle4"/>
+						</div>
+					</div>
+					<div id="door">
+						<img src="door.png" alt="" id="door">
+						<div id="play"><img src="play.png" alt="" /></div>
+						<img src="door_l.png" alt="" id="door_l">
+						<img src="door_r.png" alt="" id="door_r">
+						<ul class="popup_b">
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<img src="castle7.png" alt="" id="castle7"/>
+					<img src="castle9.png" alt="" id="castle9"/>
+					<img src="castle10.png" alt="" id="castle10"/>
+				</div>	
+				<div id="section_a1"></div>
+				<div id="ddd"></div>
+				
+				<div id="popup">
+					<ul class="popup_b">
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="popup_b">
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="popup_b">
+						<li></li>
+						<li></li>
+					</ul>					
+				</div>
+				<div class="menu">
+					<img src="menu4.png" alt="" />
+					<ul id="arrow">
+						<li>◀</li>
+						<li>THE  IDEALS, THE DREAMS</li>
+						<li>▶</li>
+					</ul>
+				</div>
+				<div id="popupb"></div>
+				<div id="popup1">
+					<div class="popup_no">
+						<ul>
+							<li>〈 </li>
+							<li>Park Hours</li>
+							<li>〉 </li>
+						</ul>
+						<div class="popup_p">
+							<p><img src="popup1_1.png" alt=""><span>TODAY</span><br />Feb 11, 2018 <br />8:00 AM to 12:00 AM</p>
+							<p><img src="popup1_2.png" alt="" /><span>Disneyland Park</span><br />8:00 AM to 12:00 AM</p>
+							<p><img src="popup1_3.png" alt="" /><span>Disney California Adventure Park</span><br />8:00 AM to 12:00 AM</p>
+						</div>
+						<div class="popup1_c">
+							<div class="popup1_c_1"><img src="close_mic.png" alt="" /></div>
+							<div class="popup1_c_2">Close</div>
+						</div>
+					</div>
+				</div>
+				<div id="popup2">
+					<div class="popup_no">
+						<ul>
+							<li>〈 </li>
+							<li>Maps</li>
+							<li>〉 </li>
+						</ul>
+						<div class="popup_p">
+							<p><img src="map.jpg" alt="" /></p>
+						</div>
+						<div class="popup1_c">
+							<div class="popup1_c_1"><img src="close_min.png" alt="" /></div>
+							<div class="popup1_c_2">Close</div>
+						</div>
+					</div>
+				</div>
+				<div id="popup_p2">
+					<ul>
+						<li><img src="map.jpg" alt=""></li>
+					</ul>
+				</div>
+				<div id="popup3">
+					<div class="popup_no">
+						<ul>
+							<li>〈 </li>
+							<li>Help</li>
+							<li>〉 </li>
+						</ul>
+						<div class="popup_p">
+							<p><span>Send Us a Question.<br />We'll Help Get You an Answer.</span></p>
+							<p>Please fill out this form and a Disney Cast Member will get back to you. To receive quotes or make modifications to existing reservations, please call us.</p>
+							<div id="email"><img src="email.png" alt="" />E-mail<span>〉</span></div>
+							<p><span>Call Disneyland Park</span></p>
+							<ul>
+								<li>Website Support<span>(714) 520-6222</span></li>
+								<li>Tickets<span>(714) 781-4636</span></li>
+								<li>Dining-Reservations<span>(714) 781-DINE<br />(714) 781-3463</span></li>
+							</ul>
+						</div>
+						<div class="popup1_c">
+							<div class="popup1_c_1"><img src="close_goo.png" alt="" /></div>
+							<div class="popup1_c_2">Close</div>
+						</div>
+					</div>
+				</div>
+<!--  disneyland video -->
+				<div id="video1">
+					<video src="disney.mp4" loop="loop" controls="controls"></video>
+				</div>
+				<div id="video1_close"><img src="close.png" alt=""></div>
+			</div>
+<!-- land -->
+			<div id="section2">
+				<div id="cloud_img">
+					<div><img src="2_cloud2.png" alt="" /></div>
+					<div><img src="2_cloud3.png" alt="" /></div>
+				</div>
+				<ul id="land">
+					<li><h1>Theme park<br /><span>PREM.A Theme park</span></h1></li>
+					<li><img src="land1_.jpg" alt=""><h1>Main Street, U.S.A.</h1></li>
+					<li><img src="land2_.jpg" alt=""><h1>Adventureland</h1></li>
+					<li><img src="land3_.jpg" alt=""><h1>Frontierland</h1></li>
+					<li><img src="land4_.jpg" alt=""><h1>New Orleans Square</h1></li>
+					<li><img src="land5_.jpg" alt=""><h1>Critter Country</h1></li>
+					<li><img src="land6_.jpg" alt=""><h1>Fantasyland</h1></li>
+					<li><img src="land7_.jpg" alt=""><h1>Mickey's Toontown</h1></li>
+					<li><img src="land8_.jpg" alt=""><h1>Tomorrowland</h1></li>
+				</ul>
+				<div class="menu">
+					<img src="menu4.png" alt="" />
+					<ul id="arrow">
+						<li>◀</li>
+						<li>THEME PARK</li>
+						<li>▶</li>
+					</ul>
+				</div>
+			</div>
+<!-- ticket -->
+			<div id="section3">
+				<div id="cloud_3"><img src="3_cloud.png" alt="" /></div>
+				<ul id="wrap_3">
+					<li><img src="ticket/ticket.jpg" alt="" /></li>
+					<li>
+						<div id="ticket1">
+							<p>Discover the excitement of <span>Disneyland Park</span>!</p><p>A multi-day ticket will let you make the most of your visit and see all<br />that both parks have to offer!</p><p>Be aware that <span>pre-purchased theme park tickets do not guarantee entry<br />on any given day</span>. Please consider arriving early to begin your magical experience!</p>
+							<div class="button">
+								<div class="reservation2"></div>
+								<div class="reservation">+ BOOK NOW</div>			
+							</div>
+						</div>
+						<div id="ticket2">
+							<img src="ticket/ticket_line.png" alt="">
+							<p>Select the Number of Days</p>
+							<img src="close.png" alt="">
+							<dl>
+								<dt>1<div>Prices vary by date.</div></dt>
+								<dt>2<div>From<br />$99.50</div></dt>
+								<dt>3<div>From<br />$90.00<br /><span>Includes one<br />Magic Morning</span></div></dt>
+								<dt>4<div>From<br />$72.50<br /><span>Includes one<br />Magic Morning</span></div></dt>
+								<dt>5<div>From<br />$61.00<br /><span>Includes one<br />Magic Morning</span></div></dt>
+							</dl>
+							<div id="ticket_n">
+								<h3>Select the Number of Tickets</h3>
+								<p id="n1">
+									<span>Ages 10+</span>
+									<span>－</span>
+									<span>0</span>
+									<span>＋</span>
+								</p>
+								<p id="n2">
+									<span>Ages 3-9</span>
+									<span>－</span>
+									<span>0</span>
+									<span>＋</span>
+								</p>
+							</div>
+							<div id="ticket_y">
+								<h5>*Price (USD) per day, per ticket (Ages 10+)</h5>
+								<h6>Magic Morning allows one early admission into select attractions, stores, entertainment and dining locations at Disneyland Resort Park before the park opens to the general public. For admission, each member of your travel party (ages 3 and older) must have a valid 3-day or longer Disneyland Resort theme park ticket purchased online. Tickets purchased at the Ticket Booth do not include the Magic Morning entitlement. To enhance the Magic Morning experience, please arrive at least one hour and 15 minutes prior to regular park opening. Magic Morning early admission is based on availability and does not operate daily. Applicable days and times of operation and all other elements including, but not limited to, operation of attractions, entertainment, stores and restaurants, and appearances of Characters, may vary and are subject to change without notice. Subject to capacity, cancellation and other restrictions.</h6>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="menu">
+					<img src="menu4.png" alt="" />
+					<ul id="arrow">
+						<li>◀</li>
+						<li>TICKET</li>
+						<li>▶</li>
+					</ul>
+				</div>
+			</div>
+<!-- character -->
+			<div id="section4">
+				<div id="sec4_wrap">
+					<ul id="sec4_img">
+						<li>
+							<img src="ch_img1.png" alt="">
+							<p>Fantasy</p>
+						</li>
+						<li>
+							<img src="ch_img2.png" alt="">
+							<p>Exciting</p>
+						</li>
+						<li>
+							<img src="ch_img3.png" alt="">
+							<p>Experience</p>
+						</li>
+						<li>
+							<img src="ch_img4.png" alt="">
+							<p>Funny</p>
+						</li>
+					</ul>
+					<div id="sec4_text">
+						<div id="sec4_text_left">
+							<div id="sec4_text_img"></div>
+						</div>
+						<div id="sec4_text_right">
+							<p><span>Many Disney characters</span> can be found throughout the park, greeting visitors, interacting with children, and posing for photos. Some characters have specific areas where they are scheduled to appear, but can be found wandering as well. Some of the rarest are characters like Rabbit, Max, Mushu, and Agent P. Periodically through recent decades, Mickey Mouse would climb the Matterhorn attraction several times a day with the support of Minnie, Goofy, and other performers. Other mountain climbers could also be seen on the Matterhorn from time to time. As of March 2007, Mickey and his "toon" friends no longer climb the Matterhorn but the climbing program continues.</p>
+						</div>
+						<div id="sec4_button_wrap">
+							<div id="sec4_button"></div>
+							<div id="sec4_button2">
+								<ul id="sec4_button_a">
+									<li><span>click</span>Let's go see !</li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="menu">
+					<img src="menu4.png" alt="" />
+					<ul id="arrow">
+						<li>◀</li>
+						<li>CHARACTERS</li>
+						<li>▶</li>
+					</ul>
+				</div>
+			</div>
+<!-- entertainment -->
+			<div id="section5">
+				<div id="section5_img_wrap">
+					<div id="section5_img_slide">
+						<img src="entertainment/entertainment1.png" alt="" /><img src="entertainment/entertainment2.png" alt="" /><img src="entertainment/entertainment3.jpg" alt="" /><img src="entertainment/entertainment4.jpg" alt="" /><img src="entertainment/entertainment5.jpg" alt="" /><img src="entertainment/entertainment6.jpg" alt="" />
+					</div>
+				</div>
+				<div id="section5_black"></div>
+				<div id="wrap5_slidewrap">
+					<div id="wrap5_slidewrap2">
+						<ul id="wrap5_slide">
+							<li>
+								<div><img src="entertainment/entertainment1.png" alt=""></div>
+								<h1>01</h1>
+								<h2></h2>
+								<h3>Princess Elena's Musical Grand Arrival</h3>
+								<p>Enjoy a little face time with this brave and adventurous prince</p>
+							</li>
+							<li>
+								<div><img src="entertainment/entertainment2.png" alt=""></div>
+								<h1>02</h1>
+								<h2></h2>
+								<h3>Parades at Disneyland Park</h3>
+								<p>Check out the parades at both Theme Parks and see which ones are being performed now and when other parades will be returning.</p>
+							</li>
+							<li>
+								<div><img src="entertainment/entertainment3.png" alt=""></div>
+								<h1>03</h1>
+								<h2></h2>
+								<h3>Holiday Toy Drummers</h3>
+								<p>The beat is rockin’ the street in this giant jam session—<br />led by drummer extraordinaire, Mickey Mouse!</p>
+							</li>
+							<li>
+								<div><img src="entertainment/entertainment4.jpg" alt=""></div>
+								<h1>04</h1>
+								<h2></h2>
+								<h3>Storytelling at Royal Theatre</h3>
+								<p>Hear ye, hear ye…lords and ladies of all ages are cordially invited to watch legendary Disney tales come to life!</p>
+							</li>
+							<li>
+								<div><img src="entertainment/entertainment5.jpg" alt=""></div>
+								<h1>05</h1>
+								<h2></h2>
+								<h3>The Dapper Dans</h3>
+								<p>This barbershop quartet spins harmonies as they play the chimes, tap dance and regale audiences with vaudeville humor.</p>
+							</li>
+							<li>
+								<div><img src="entertainment/entertainment6.jpg" alt=""></div>
+								<h1>06</h1>
+								<h2></h2>
+								<h3>A Pixar Nighttime Spectacular</h3>
+								<p>Join friends from Disney·Pixar films on an emotional journey filled with dazzling projections, pyrotechnics and music from the movies.</p>
+							</li>
+						</ul>
+					</div>
+					<div id="wrap_5line"></div>
+				</div>
+				<div class="menu">
+					<img src="menu4.png" alt="" />
+					<ul id="arrow">
+						<li>◀</li>
+						<li>ENTERTAINMENT</li>
+						<li>▶</li>
+					</ul>
+				</div>
+			</div>
+<!-- gallery -->
+			<div id="section6">
+				<div id="sec6_bg">
+					<video src="fireworks.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+				</div>
+				<div id="sec6_content">
+					<div id="sec6_box1">
+						<div class="sec6_box">
+							<div>01</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>02</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>03</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>04</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>05</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>06</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>07</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>08</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>09</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="sec6_box">
+							<div>10</div>
+							<ul>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div id="sec6_box2">
+						<h5><</h5>
+						<h5>></h5>
+					</div>
+					<div id="sec6_box3"></div>
+				</div>
+				<div class="menu">
+					<img src="menu4.png" alt="" />
+					<ul id="arrow">
+						<li>◀</li>
+						<li>GALLERY</li>
+						<li>▶</li>
+					</ul>
+				</div>
+			</div>
+<!-- slidemenu -->
+			<div id="slidemenu_wrap">
+				<div id="slidemenu">
+					<div id="line">
+						<ul class="line_a">
+							<li></li>
+							<li ></li>
+						</ul>
+						<ul class="line_a">
+							<li></li>
+							<li></li>
+						</ul>
+						<ul class="line_a">
+							<li></li>
+							<li></li>
+						</ul>
+						<ul class="line_a">
+							<li></li>
+							<li></li>
+						</ul>
+						<ul class="line_a">
+							<li></li>
+							<li></li>
+						</ul>
+						<ul class="line_a">
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<ul class="slidemenu_img">
+						<li><img src="slide1.png" alt=""></li>
+						<li></li>
+					</ul>
+					<ul class="slidemenu_img">
+						<li><img src="slide2.png" alt=""></li>
+						<li></li>
+					</ul>
+					<ul class="slidemenu_img">
+						<li><img src="slide3.png" alt=""></li>
+						<li></li>
+					</ul><ul class="slidemenu_img">
+						<li><img src="slide4.png" alt=""></li>
+						<li></li>
+					</ul><ul class="slidemenu_img">
+						<li><img src="slide5.png" alt=""></li>
+						<li></li>
+					</ul><ul class="slidemenu_img">
+						<li><img src="slide6.png" alt=""></li>
+						<li></li>
+					</ul>
+				</div>
+				<div id="slidemenu_n">
+					<ul id="slidemenu_n_1">
+						<li>GALLERY</li>
+						<li>ENTERTAINMENT</li>
+						<li>CHARACTERS</li>
+						<li>TICKET</li>
+						<li>THEME PARK</li>
+						<li>HOME</li>
+					</ul>
+					<ul id="slidemenu_n_2">
+						<li>01</li>
+						<li>02</li>
+						<li>03</li>
+						<li>04</li>
+						<li>05</li>
+						<li>06</li>
+					</ul>
+				</div>
+				<div class="circle">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+ </body>
+</html>
